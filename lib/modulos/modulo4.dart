@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+
 import '../../services/user_progress.dart';
 
-/// Modelo simples para representar cada aula dentro do módulo.
+/// Simple model representing each lesson inside the module.
 class _Aula {
   final String titulo;
   final String imagem1;
@@ -33,173 +34,207 @@ class Modulo4Page extends StatelessWidget {
 
   final String moduleId = 'modulo_4';
 
-  // Lista das 5 aulas do módulo sobre Manutenção e Estilo de Vida Feminino.
+  // List of the 5 lessons in the Maintenance & Women's Lifestyle module.
   static final List<_Aula> _aulas = [
-    // Aula 1 - O Estilo de Vida e o Glow de Dentro para Fora
+    // Lesson 1 - Hydration From The Inside Out
     const _Aula(
-      titulo: "01. O Glow Tropical: hidratação, nutrição e energia",
+      titulo: "01. Hydration From The Inside Out",
       imagem1:
-      "https://images.unsplash.com/photo-1540420773420-3366772f4999?w=1000",
+      "https://images.unsplash.com/photo-1628692945318-f44a3c346afb?w=1000",
       introducao:
-      "O segredo da beleza da mulher brasileira não está em produtos caros, "
-          "mas na consistência de hábitos diários. O clima tropical exige foco constante "
-          "na hidratação interna e no consumo de alimentos ricos em antioxidantes que refletem "
-          "diretamente no brilho da pele, na força dos cabelos e na disposição ao longo do dia.",
-      tutorialCasaTitulo: "Faça em casa: Suco Anti-inflamatório do Glow",
-      tutorialCasaMateriais: [
-        "200ml de água de coco gelada",
-        "1 fatia de abacaxi fresca",
-        "1/2 cenoura média",
-        "1 pedaço pequeno de gengibre (1 cm)",
-        "Suco de 1/2 limão",
-      ],
-      tutorialCasaPassos: [
-        "Bata todos os ingredientes no liquidificador por 1 a 2 minutos.",
-        "Evite coar para preservar as fibras essenciais para o intestino.",
-        "Tome pela manhã em jejum ou no lanche da tarde para desinchamento e energia.",
-      ],
-    ),
-
-    // Aula 2 - Assinatura Olfativa e Perfumação em Camadas
-    const _Aula(
-      titulo: "02. Cheiro de Banho Tomado: o segredo da perfumação prolongada",
-      imagem1:
-      "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=1000",
-      introducao:
-      "A marca registrada da brasileira é estar sempre cheirosa, independentemente "
-          "do calor. A técnica de perfumação em camadas (layering) consiste em combinar "
-          "sabonetes perfumados, hidratantes e body splashes para criar uma aura marcante "
-          "e duradoura sem pesar no ambiente.",
+      "No amount of lotion can fully replace what your skin needs from the "
+          "inside. Brazilian women rarely go anywhere without a water bottle, and "
+          "coconut water (água de coco) is practically a daily ritual, not just a "
+          "beach treat — it's seen as one of the simplest ways to stay hydrated and "
+          "replenish electrolytes in a hot climate. In this lesson, you'll build a "
+          "realistic daily hydration habit instead of just remembering to drink water "
+          "when you're already thirsty.",
       imagem2:
-      "https://images.unsplash.com/photo-1547887537-6158d64c35b3?w=1000",
-      dicaTitulo: "Rotina de fixação de perfume no calor",
+      "https://images.unsplash.com/photo-1620752420341-4cd7642568dd?w=1000",
+      dicaTitulo: "A simple daily hydration routine",
       passos: [
-        "Aplique o creme corporal perfumado logo após o banho com a pele levemente úmida.",
-        "Borrife o Body Splash ou Deo Colônia no corpo ainda sem roupas.",
-        "Foque nos pontos de pulsação quentes: atrás das orelhas, sulco do pescoço, dobras dos cotovelos e pulsos.",
-        "Aplique uma bruma perfumada suave no cabelo ou nas roupas a uma distância de 20cm.",
+        "Start your day with a full glass of water before coffee or anything else.",
+        "Keep a water bottle somewhere visible — on your desk, your bag, your nightstand.",
+        "Aim for about 2 to 2.5 liters (roughly 8-10 cups) of fluids a day, more if it's hot or you're active.",
+        "Add coconut water or an herbal tea in the afternoon instead of another sugary drink.",
+        "Notice the color of your urine as a rough hydration check — pale yellow is the goal.",
       ],
       dicasExtras: [
-        "Pele bem hidratada fixa o perfume até 3 vezes mais tempo do que pele seca.",
-        "Vaselina sem cheiro nos pontos de pulsação antes do perfume aumenta a durabilidade.",
+        "Watermelon, cucumber and oranges are high water-content snacks that support hydration too.",
+        "Caffeine and alcohol both increase fluid loss, so add an extra glass of water alongside them.",
+        "Dry lips and dull-looking skin are often early signs of low hydration, not just a skincare issue.",
       ],
-      tutorialCasaTitulo: "Faça em casa: bruma corporal e capilar refrescante",
+      tutorialCasaTitulo: "Make your own Brazilian-style infused water",
       tutorialCasaMateriais: [
-        "100ml de água desmineralizada ou filtrada",
-        "1 colher de chá de óleo de rícino ou glicerina vegetal",
-        "10 borrifadas do seu body splash favorito",
-        "1 frasco borrifador spray de 100ml",
+        "1 liter of cold water",
+        "1/2 lime or lemon, sliced",
+        "A handful of fresh mint leaves",
+        "A few slices of cucumber (optional)",
       ],
       tutorialCasaPassos: [
-        "Misture a água e a glicerina no frasco borrifador.",
-        "Adicione as borrifadas do body splash e agite bem.",
-        "Mantenha na bolsa para retocar o frescor e o perfume nas pernas e braços ao longo do dia.",
+        "Add the lime, mint and cucumber slices to a pitcher of cold water.",
+        "Let it sit in the fridge for at least 1 hour so the flavors infuse.",
+        "Drink throughout the day instead of plain water for a refreshing, flavorful boost.",
+        "Refill the same fruit and mint with fresh water once or twice before replacing them.",
       ],
     ),
 
-    // Aula 3 - Cronograma de Cuidados Pessoais e Manutenção Semanal
+    // Lesson 2 - Sleep & Skin Recovery
     const _Aula(
-      titulo: "03. Mão de Feita e Autocuidado: o cronograma de manutenção",
+      titulo: "02. Sleep & Skin Recovery: your nighttime reset",
       imagem1:
-      "https://images.unsplash.com/photo-1604654894610-df63bc536371?w=1000",
+      "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=1000",
       introducao:
-      "Unhas bem cuidadas, pele sem pelos encravados e cabelos alinhados não "
-          "exigem ida diária ao salão. O segredo é um cronograma simples de manutenção "
-          "semanal que encaixa na rotina corrida, garantindo uma aparência impecável "
-          "sem esforço excessivo.",
+      "Skin genuinely repairs and produces collagen while you sleep, which is "
+          "why consistent, quality sleep does more for your glow than most products "
+          "ever will. Many Brazilian women treat the shower before bed as a wind-down "
+          "ritual rather than a chore, using it to physically signal to the body that "
+          "the day is over. Pair that with a few small nighttime habits, and you get "
+          "noticeably better skin recovery without changing a single product.",
       imagem2:
-      "https://images.unsplash.com/photo-1519014816548-bf5fe059798b?w=1000",
-      dicaTitulo: "Cronograma simples de manutenção feminina",
+      "https://images.unsplash.com/photo-1687435703153-88f6bc0cdcff?w=1000",
+      dicaTitulo: "Building a real wind-down routine",
       passos: [
-        "Domingo: Ritual de esfoliação, máscara capilar e tratamento de unhas.",
-        "Quarta-feira: Retoque leve de hidratação, remoção de cutículas e reparador de pontas.",
-        "Diário: Proteção solar, hidratação de mãos/pés antes de dormir e óleo de cutículas.",
+        "Pick a consistent bedtime and wake-up time, even on weekends, to regulate your body clock.",
+        "Take your evening shower or skincare routine as the official 'day is over' signal.",
+        "Dim the lights and put screens away at least 20-30 minutes before bed.",
+        "Sleep on a silk or satin pillowcase if you can — it reduces friction on skin and hair overnight.",
+        "Try to sleep on your back occasionally to reduce the sleep lines that can form on the face over time.",
       ],
       dicasExtras: [
-        "Empurrar as cutículas com óleo hidratante em vez de fundir com alicate evita inflamações.",
-        "Usar luvas ao lavar louça preserva o esmalte e a hidratação das mãos.",
+        "Most adults need 7 to 9 hours of sleep for the body to properly complete its repair cycles.",
+        "A cool, dark room generally supports deeper sleep than a warm, bright one.",
+        "Consistent poor sleep shows up on skin as dullness and puffiness faster than most people expect.",
       ],
-      tutorialCasaTitulo: "Faça em casa: banho de parafina e nutrição profunda de mãos e pés",
+      tutorialCasaTitulo: "Make a calming lavender & chamomile pillow mist",
       tutorialCasaMateriais: [
-        "2 colheres de sopa de creme hidratante denso ou manteiga corporal",
-        "1 colher de chá de óleo de coco ou amêndoas",
-        "2 sacos plásticos limpos",
-        "1 par de meias ou luvas",
+        "100ml of distilled or boiled-and-cooled water",
+        "1 tablespoon of witch hazel or vodka (helps the oils mix with the water)",
+        "8-10 drops of lavender essential oil",
+        "A small spray bottle",
       ],
       tutorialCasaPassos: [
-        "Misture o creme denso com o óleo e aplique generosamente nas mãos ou pés.",
-        "Envolva a região com o saco plástico e coloque as meias/luvas por cima.",
-        "Deixe agir por 20 minutos enquanto relaxa, permitindo que o calor abra os poros.",
-        "Remova o plástico e massageie o excesso na pele sem enxaguar.",
+        "Add the witch hazel or vodka to the spray bottle first, then the essential oil.",
+        "Shake well, then top up with the water and shake again.",
+        "Lightly mist your pillow a few minutes before bed, so the fabric isn't damp when you lie down.",
+        "Shake the bottle before each use, since the oil naturally separates over time.",
       ],
     ),
 
-    // Aula 4 - Cabelos praianos com movimento e brilho
+    // Lesson 3 - Daily Sun Protection Habits
     const _Aula(
-      titulo: "04. Cabelo com Efeito Bossa Nova: movimento e brilho tropical",
+      titulo: "03. Daily Sun Protection: the non-negotiable habit",
       imagem1:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1000",
+      "https://images.unsplash.com/photo-1562261150-0989084c593e?w=1000",
       introducao:
-      "O cabelo com aspecto natural, praiano e com movimento leve é o "
-          "desejo de muitas brasileiras. O segredo está em controlar o frizz sem tirar "
-          "a leveza dos fios, combinando acidificação, óleos finalizadores e técnicas de "
-          "secagem sem fontes excessivas de calor.",
-      dicaTitulo: "Técnica de alinhamento e brilho espelhado",
+      "In Brazil, sunscreen isn't something you only think about at the beach — "
+          "it's the final step of the morning skincare routine, every single day, "
+          "sun or clouds. This one habit alone does more for long-term skin tone, "
+          "texture and youthfulness than almost any other product on the market. "
+          "This lesson is about making SPF an automatic part of your morning, not an "
+          "occasional afterthought.",
+      dicaTitulo: "Making sunscreen an actual daily habit",
       passos: [
-        "Lave os fios com água morna para fria no último enxágue para selar as cutículas.",
-        "Aplique protetor térmico ou leave-in leve nos fios ainda bem úmidos.",
-        "Penteie sempre das pontas em direção à raiz com escova de cerdas flexíveis.",
-        "Finalize com 2 a 3 gotas de óleo reparador focado apenas nas pontas.",
+        "Apply sunscreen as the very last step of your morning skincare, after moisturizer.",
+        "Use about a nickel-sized amount for the face alone — most people apply far too little.",
+        "Don't forget the ears, the back of the neck, and the hands, which age visibly if skipped.",
+        "Reapply every 2 hours if you're outdoors for extended periods, not just once in the morning.",
+        "Keep a small SPF stick or compact sunscreen in your bag for easy reapplication during the day.",
       ],
       dicasExtras: [
-        "Usar fronha ou touca de cetim para dormir reduz até 80% do frizz ao acordar.",
-        "Nunca durma com os cabelos úmidos para evitar a quebra e fungos no couro cabeludo.",
+        "UV rays pass through clouds and windows, so 'it's not sunny today' isn't a reason to skip SPF.",
+        "A wide-brim hat and sunglasses add real extra protection on top of sunscreen, not instead of it.",
+        "Be skeptical of homemade 'natural sunscreen' recipes online — they don't reliably block UV rays.",
       ],
-      tutorialCasaTitulo: "Faça em casa: acidificação capilar com vinagre de maçã",
+      tutorialCasaTitulo: "Build your grab-and-go sun protection kit",
       tutorialCasaMateriais: [
-        "100ml de água filtrada",
-        "2 colheres de sopa de vinagre de maçã orgânico (pH ácido)",
-        "Seu condicionador ou máscara favorita",
+        "A small pouch or bag dedicated to sun protection",
+        "A travel-size or stick sunscreen",
+        "A pair of UV-protective sunglasses",
+        "A compact folding hat or cap, if you have one",
       ],
       tutorialCasaPassos: [
-        "Após lavar o cabelo com shampoo, misture a água com o vinagre em um recipiente.",
-        "Alique a mistura nos fios do comprimento às pontas e deixe agir por 3 minutos.",
-        "Aplique a máscara ou condicionador por cima sem enxaguar a mistura.",
-        "Deixe agir mais 3 minutos e enxágue abundantemente com água fria.",
+        "Put all the items together in one small pouch you can grab on your way out the door.",
+        "Keep the pouch in your bag, car, or by the front door so reapplying is never a hassle.",
+        "Refill the travel sunscreen whenever it runs low, so the kit is always ready to use.",
       ],
     ),
 
-    // Aula 5 - Autoconfiança, Postura e Elegância Descomplicada
+    // Lesson 4 - Fabric & Clothing Choices
     const _Aula(
-      titulo: "05. Elegância sem Esforço: postura, presença e mentalidade",
+      titulo: "04. Fabric & Clothing Choices That Protect Your Skin",
       imagem1:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000",
+      "https://images.unsplash.com/photo-1713881587420-113c1c43e28a?w=1000",
       introducao:
-      "O toque final de qualquer rotina de beleza é a atitude. A beleza da "
-          "mulher brasileira é reconhecida mundialmente pela energia, sorriso e pela forma "
-          "descomplicada e autêntica de se posicionar. Aprenda a alinhar postura física, "
-          "linguagem corporal e rotina de autocuidado para transmitir segurança em qualquer ambiente.",
+      "What you wear right after a shower, a workout, or a day at the beach "
+          "matters more than most people realize. In hot, humid climates, tight "
+          "synthetic fabrics trap heat and moisture against the skin, which can lead "
+          "to irritation, breakouts on the body, and worsened keratosis pilaris. "
+          "Brazilian women tend to favor breathable natural fabrics like cotton and "
+          "linen, especially for anything worn close to freshly-moisturized skin.",
       imagem2:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=1000",
-      dicaTitulo: "Ajuste de presença e postura em 3 passos",
+      "https://images.unsplash.com/photo-1596433904500-97b901c5d274?w=1000",
+      dicaTitulo: "Choosing fabric with your skin in mind",
       passos: [
-        "Alinhamento dos ombros: gire os ombros para trás e para baixo, relaxando o pescoço.",
-        "Contato visual: mantenha o olhar firme e acolhedor durante conversas.",
-        "Respiração consciente: faça pausas de 3 respirações profundas em momentos de ansiedade.",
+        "Let your skin air-dry for a few minutes after a shower before putting on tight clothing.",
+        "Choose cotton or linen over synthetic fabrics for everyday wear in hot or humid weather.",
+        "Avoid tight leggings or jeans right after exfoliating or shaving to reduce irritation.",
+        "Wash new clothes before the first wear to remove any residue that can irritate the skin.",
+        "Change out of sweaty workout clothes as soon as possible instead of lounging in them.",
       ],
       dicasExtras: [
-        "Visual limpo e alinhado traz mais elegância do que excesso de acessórios.",
-        "A autoconfiança é um hábito diário exercitado através do autocuidado constante.",
+        "Breathable fabrics are especially worth prioritizing for underwear and anything worn overnight.",
+        "Rough seams and tags rubbing against freshly exfoliated skin are a common, overlooked irritant.",
+        "Natural fibers tend to hold onto self-tanner and body oils less than synthetic ones do.",
       ],
-      tutorialCasaTitulo: "Faça em casa: ritual noturno de descompressão e preparação",
+      tutorialCasaTitulo: "Make a gentle, skin-friendly fabric rinse",
       tutorialCasaMateriais: [
-        "1 xícara de chá morno (camomila, mulungu ou capim-limão)",
-        "Hidratante facial ou óleo para massagem rápida",
+        "1/2 cup of white vinegar",
+        "5-6 drops of a gentle essential oil, like lavender (optional, for scent)",
       ],
       tutorialCasaPassos: [
-        "Desconecte de telas 30 minutos antes de ir para a cama.",
-        "Tome seu chá morno prestando atenção no momento presente.",
-        "Ao aplicar seu creme noturno, faça massagens circulares na mandíbula para aliviar a tensão do dia.",
+        "Add the vinegar (and essential oil, if using) to your washing machine's fabric softener compartment.",
+        "Wash as usual — the vinegar helps rinse out detergent residue that can irritate sensitive skin.",
+        "Use this in place of commercial fabric softener for towels, sheets, and underwear.",
+      ],
+    ),
+
+    // Lesson 5 - Building A Routine That Sticks
+    const _Aula(
+      titulo: "05. Building A Routine That Actually Sticks",
+      imagem1:
+      "https://images.unsplash.com/photo-1544717304-a2db4a7b16ee?w=1000",
+      introducao:
+      "You now have skin, body, glow, sleep, sun and fabric habits — the real "
+          "challenge isn't learning them, it's keeping them going once the initial "
+          "motivation fades. In this final lesson, you'll pull everything from the "
+          "program into one simple, realistic routine, using habit-stacking so new "
+          "habits attach themselves to things you already do every day.",
+      imagem2:
+      "https://images.unsplash.com/photo-1698746043955-42b03ddedfcb?w=1000",
+      dicaTitulo: "How to make it stick long-term",
+      passos: [
+        "Pick one anchor habit you already do daily without fail, like brushing your teeth.",
+        "Attach one new habit directly before or after that anchor, instead of adding it randomly.",
+        "Start with just 2-3 habits at once instead of trying to do everything from every lesson right away.",
+        "Do a quick weekly check-in: what stuck, what didn't, and why.",
+        "Add one new habit only once the current ones feel automatic, not effortful.",
+      ],
+      dicasExtras: [
+        "Missing one day isn't failure — the habit only really breaks after several days in a row.",
+        "Visual progress (photos every few weeks) tends to keep motivation higher than the mirror alone.",
+        "The goal isn't a perfect routine, it's a routine you'll still be doing in six months.",
+      ],
+      tutorialCasaTitulo: "Make a simple paper habit tracker",
+      tutorialCasaMateriais: [
+        "1 sheet of paper or a small notebook",
+        "A pen or marker",
+      ],
+      tutorialCasaPassos: [
+        "List your 2-3 chosen habits down the left side of the page.",
+        "Draw 7 boxes next to each habit, one for every day of the week.",
+        "Mark a box each time you complete that habit, and leave it blank if you miss a day.",
+        "At the end of the week, glance back to see your pattern before starting a new sheet.",
       ],
     ),
   ];
@@ -211,7 +246,7 @@ class Modulo4Page extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFF16181A),
         title: const Text(
-          "Módulo 4 - Manutenção e Estilo de Vida Feminina",
+          "Module 4 - Maintenance & Women's Lifestyle",
           style: TextStyle(color: Colors.white, fontSize: 18),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
@@ -233,7 +268,7 @@ class Modulo4Page extends StatelessWidget {
                   if (i != _aulas.length - 1) const SizedBox(height: 48),
                 ],
 
-                // Botão Dinâmico de Concluir Módulo
+                // Dynamic "Mark module as complete" button
                 ListenableBuilder(
                   listenable: userProgress,
                   builder: (context, child) {
@@ -250,7 +285,7 @@ class Modulo4Page extends StatelessWidget {
                           color: concluido ? Colors.green : Colors.white,
                         ),
                         label: Text(
-                          concluido ? "Módulo Concluído ✔" : "Marcar como Concluído",
+                          concluido ? "Module Completed ✔" : "Mark As Completed",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -280,7 +315,7 @@ class Modulo4Page extends StatelessWidget {
     );
   }
 
-  // Constrói o conteúdo completo de uma aula (título, imagens, textos, tutorial e dicas).
+  // Builds the full content of a lesson (title, images, texts, tutorial and tips).
   Widget _buildAula(_Aula aula) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -336,7 +371,7 @@ class Modulo4Page extends StatelessWidget {
     );
   }
 
-  // Card de imagem, no mesmo estilo visual dos outros módulos.
+  // Image card, same visual style used across the other modules.
   Widget _buildImagem(String url) {
     return Container(
       width: double.infinity,
@@ -358,7 +393,7 @@ class Modulo4Page extends StatelessWidget {
     );
   }
 
-  // Bloco de dica + tutorial passo a passo (versão curta / rotina).
+  // "Tip" block + short step-by-step routine.
   Widget _buildTutorial(String titulo, List<String> passos) {
     return Container(
       width: double.infinity,
@@ -376,7 +411,7 @@ class Modulo4Page extends StatelessWidget {
               Icon(Icons.lightbulb, color: Colors.green, size: 20),
               SizedBox(width: 8),
               Text(
-                "Dica",
+                "Tip",
                 style: TextStyle(
                   color: Colors.green,
                   fontSize: 14,
@@ -437,7 +472,7 @@ class Modulo4Page extends StatelessWidget {
     );
   }
 
-  // Bloco de tutorial caseiro: materiais + modo de preparo.
+  // Home tutorial block: materials + step-by-step preparation.
   Widget _buildTutorialCasa(
       String titulo, List<String> materiais, List<String> passos) {
     return Container(
@@ -456,7 +491,7 @@ class Modulo4Page extends StatelessWidget {
               Icon(Icons.home_repair_service, color: Colors.orange, size: 20),
               SizedBox(width: 8),
               Text(
-                "Tutorial: faça em casa",
+                "Tutorial: make it at home",
                 style: TextStyle(
                   color: Colors.orange,
                   fontSize: 14,
@@ -476,13 +511,13 @@ class Modulo4Page extends StatelessWidget {
           ),
           const SizedBox(height: 18),
 
-          // O que você vai precisar
+          // What you'll need
           Row(
             children: const [
               Icon(Icons.shopping_basket_outlined, color: Colors.orangeAccent, size: 16),
               SizedBox(width: 6),
               Text(
-                "O que você vai precisar",
+                "What you'll need",
                 style: TextStyle(
                   color: Colors.orangeAccent,
                   fontSize: 13,
@@ -516,13 +551,13 @@ class Modulo4Page extends StatelessWidget {
 
           const SizedBox(height: 18),
 
-          // Modo de preparo
+          // How to make it
           Row(
             children: const [
               Icon(Icons.checklist, color: Colors.orangeAccent, size: 16),
               SizedBox(width: 6),
               Text(
-                "Modo de preparo",
+                "How to make it",
                 style: TextStyle(
                   color: Colors.orangeAccent,
                   fontSize: 13,
@@ -574,7 +609,7 @@ class Modulo4Page extends StatelessWidget {
     );
   }
 
-  // Bloco de dicas extras.
+  // Extra tips block.
   Widget _buildDicasExtras(List<String> dicas) {
     return Container(
       width: double.infinity,
@@ -592,7 +627,7 @@ class Modulo4Page extends StatelessWidget {
               Icon(Icons.star, color: Colors.amber, size: 18),
               SizedBox(width: 8),
               Text(
-                "Dicas extras",
+                "Extra tips",
                 style: TextStyle(
                   color: Colors.amber,
                   fontSize: 14,

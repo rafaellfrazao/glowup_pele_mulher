@@ -41,7 +41,7 @@ class BonusCard extends StatelessWidget {
               OutlinedButton.icon(
                 onPressed: onDownload,
                 icon: const Icon(Icons.download, size: 16, color: Colors.white),
-                label: const Text("Baixar", style: TextStyle(color: Colors.white, fontSize: 13)),
+                label: const Text('Download', style: TextStyle(color: Colors.white, fontSize: 13)),
                 style: OutlinedButton.styleFrom(
                   side: BorderSide(color: Colors.white.withOpacity(0.15)),
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),

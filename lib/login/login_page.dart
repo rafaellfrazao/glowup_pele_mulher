@@ -14,7 +14,8 @@ class _LoginPageState extends State<LoginPage> {
   void _entrar(BuildContext context) {
     String nome = _nameController.text.trim();
     if (nome.isEmpty) {
-      nome = "Aluno"; // Nome padrão caso venha vazio
+      // Nome padrão
+      nome = 'Student';
     }
 
     // Navega para o AppLayout principal passando o nome digitado
@@ -55,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               const SizedBox(height: 8),
               Text(
-                "Digite seu nome para iniciar sua jornada:",
+                'Enter your name to start your journey:',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.grey[400], fontSize: 14),
               ),
@@ -64,7 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                 controller: _nameController,
                 style: const TextStyle(color: Colors.white),
                 decoration: InputDecoration(
-                  labelText: "Seu Nome",
+                  labelText: 'Your Name',
                   labelStyle: TextStyle(color: Colors.grey[400]),
                   filled: true,
                   fillColor: const Color(0xFF0F1112),
@@ -91,7 +92,7 @@ class _LoginPageState extends State<LoginPage> {
                   elevation: 0,
                 ),
                 child: const Text(
-                  "Acessar Plataforma",
+                  'Access Platform',
                   style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                 ),
               ),

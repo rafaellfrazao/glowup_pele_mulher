@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../services/responsive.dart'; // Ajuste o caminho do import se necessário
+import '../../services/responsive.dart';
 
 class ConteudoCard extends StatelessWidget {
   final String title;
@@ -92,7 +92,7 @@ class ConteudoCard extends StatelessWidget {
                       ),
                       padding: const EdgeInsets.symmetric(vertical: 12),
                     ),
-                    child: const Text("Acessar Módulo"),
+                    child: const Text('Access Module'),
                   ),
                 ),
               ],
@@ -155,7 +155,7 @@ class ConteudoCard extends StatelessWidget {
                       vertical: 12,
                     ),
                   ),
-                  child: const Text("Acessar"),
+                  child: const Text('Access'),
                 ),
               ],
             ),

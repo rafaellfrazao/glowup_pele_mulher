@@ -19,7 +19,7 @@ class MinhaContaPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "Minha Conta",
+            'My Account',
             style: TextStyle(
               color: Colors.white,
               fontSize: isMobileOrTablet ? 22 : 26,
@@ -28,7 +28,7 @@ class MinhaContaPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Gerencie suas informações pessoais e preferências de acesso.",
+            'Manage your personal information and access preferences.',
             style: TextStyle(color: Colors.grey[400], fontSize: 13),
           ),
           const SizedBox(height: 24),
@@ -66,9 +66,9 @@ class MinhaContaPage extends StatelessWidget {
                         ),
                       ),
                       const SizedBox(height: 2),
-                      Text(
-                        "Membro Ativo",
-                        style: TextStyle(color: Colors.grey[400], fontSize: 13),
+                      const Text(
+                        'Active Member',
+                        style: TextStyle(color: Colors.grey, fontSize: 13),
                       ),
                     ],
                   ),
@@ -79,7 +79,7 @@ class MinhaContaPage extends StatelessWidget {
 
           const SizedBox(height: 24),
           const Text(
-            "Configurações",
+            'Settings',
             style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
@@ -88,22 +88,22 @@ class MinhaContaPage extends StatelessWidget {
           _buildAccountOption(
             context,
             Icons.notifications_outlined,
-            "Notificações",
-            "Gerencie os avisos por e-mail",
+            'Notifications',
+            'Manage email notifications',
                 () {},
           ),
           _buildAccountOption(
             context,
             Icons.headset_mic_outlined,
-            "Suporte e Ajuda",
-            "Fale com nossa equipe",
+            'Support & Help',
+            'Contact our team',
                 () {},
           ),
           _buildAccountOption(
             context,
             Icons.logout,
-            "Sair da Conta",
-            "Encerrar sessão atual",
+            'Log Out',
+            'End current session',
                 () => _mostrarDialogoSaida(context),
             isLogout: true,
           ),
@@ -175,15 +175,14 @@ class MinhaContaPage extends StatelessWidget {
           backgroundColor: const Color(0xFF16181A),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
-            // CORRIGIDO AQUI: Alterado de Border.all para BorderSide.all
             side: BorderSide(color: Colors.white.withOpacity(0.1)),
           ),
           title: const Text(
-            "Deseja realmente sair?",
+            'Are you sure you want to log out?',
             style: TextStyle(color: Colors.white, fontSize: 18),
           ),
           content: const Text(
-            "Atenção: Se sair da conta, você perderá o seu progresso atual salvo no aplicativo.",
+            'Warning: If you log out, you will lose your current progress saved in the app.',
             style: TextStyle(color: Colors.grey, fontSize: 14),
           ),
           actions: [
@@ -192,7 +191,7 @@ class MinhaContaPage extends StatelessWidget {
                 Navigator.of(dialogContext).pop();
               },
               child: const Text(
-                "Cancelar",
+                'Cancel',
                 style: TextStyle(color: Colors.grey),
               ),
             ),
@@ -212,7 +211,7 @@ class MinhaContaPage extends StatelessWidget {
                       (route) => false,
                 );
               },
-              child: const Text("Sim, Sair"),
+              child: const Text('Yes, Log Out'),
             ),
           ],
         );

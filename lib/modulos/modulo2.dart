@@ -33,172 +33,270 @@ class Modulo2Page extends StatelessWidget {
 
   final String moduleId = 'modulo_2';
 
-  // Lista das 5 aulas do módulo sobre Banho e Esfoliação Corporal.
+  // Lista das 8 aulas do módulo sobre Banho e Esfoliação Corporal.
   static final List<_Aula> _aulas = [
     // Aula 1 - O Banho Restaurador
     const _Aula(
-      titulo: "01. O Banho Restaurador: temperatura e preparação",
+      titulo: "01. The Restorative Bath: temperature and preparation",
       imagem1:
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1000",
+          "https://images.unsplash.com/photo-1508759073847-9ca702cec7d2?w=1000",
       introducao:
-      "O banho corporal vai além da higiene: é o primeiro passo para uma pele "
-          "saudável e macia. A água muito quente remove a proteção natural da pele e "
-          "causa ressecamento severo. Nesta aula, você vai aprender a ajustar a temperatura "
-          "ideal do banho e preparar o corpo para absorver os nutrientes e a hidratação.",
-      tutorialCasaTitulo: "Teste e ajuste de temperatura da água em casa",
+          "Everything starts before the soap even touches your skin. Very hot water dissolves the lipid layer that protects your skin, leaving it dry, sensitive, and more prone to itching hours after the bath, even though it may seem relaxing at the moment. In this lesson, you will learn the ideal temperature, the right exposure time to water, and how to prepare your body to better absorb everything that comes next: exfoliation, hydration, and oils.",
+      tutorialCasaTitulo: "Adjust your temperature and bath rhythm",
       tutorialCasaMateriais: [
-        "1 sabonete líquido hidratante ou em barra neutro",
-        "1 toalha corporal macia",
+        "1 moisturizing liquid soap or neutral bar soap (alcohol-free formula)",
+        "1 soft and absorbent body towel",
       ],
       tutorialCasaPassos: [
-        "Ajuste o chuveiro para água morna ou fria; evite vapor excessivo no banheiro.",
-        "Mantenha o tempo total de banho entre 5 e 10 minutos para preservar a barreira cutânea.",
-        "Aplique o sabonete suavemente com as mãos, priorizando as áreas de maior acúmulo de suor.",
-        "Ao sair, seque a pele dando batidinhas leves com a toalha, sem esfregar.",
+        "Adjust the shower to lukewarm water, never hot enough to fog up the mirror.",
+        "Time it: the ideal bath to preserve your skin lasts between 5 and 10 minutes.",
+        "Apply the soap with your hands, prioritizing armpits, groin, and feet, without scrubbing the whole body with force.",
+        "When exiting, pat the skin dry with gentle taps, leaving it slightly damp for the next step.",
       ],
     ),
 
-    // Aula 2 - Esfoliação Corporal com Bucha e Esfoliantes
+    // Aula 2 - Esfoliação Corporal
     const _Aula(
-      titulo: "02. Esfoliação Corporal: renovação da pele do corpo",
+      titulo: "02. Body Exfoliation: body skin renewal",
       imagem1:
-      "https://images.unsplash.com/photo-1512290900673-3d02710343a4?w=1000",
+          "https://images.unsplash.com/photo-1533228705496-072ca298b122?w=1000",
       introducao:
-      "A pele do corpo é mais espessa do que a do rosto, acumulando mais células "
-          "mortas em regiões como cotovelos, joelhos e calcanhares. A esfoliação corporal "
-          "desobstrui os poros, estimula a circulação e previne pelos encravados, trazendo "
-          "um toque aveludado instantâneo.",
+          "Body skin is up to 4 times thicker than facial skin, which is why it accumulates many more dead cells in areas like elbows, knees, and heels. Exfoliating correctly unclogs pores, stimulates circulation, and is one of the main factors that differentiates dull skin from skin with a velvety touch and uniform appearance.",
       imagem2:
-      "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=1000",
-      dicaTitulo: "Como fazer a esfoliação corporal correta",
+          "https://images.unsplash.com/photo-1650543679723-de88854178c4?w=1000",
+      dicaTitulo: "How to perform correct body exfoliation",
       passos: [
-        "Umedeça o corpo com água morna para amaciar a pele antes de aplicar o produto.",
-        "Aplique o esfoliante em movimentos circulares, de baixo para cima (em direção ao coração).",
-        "Dê atenção especial a áreas mais grossas, como joelhos, pés e cotovelos.",
-        "Evite áreas sensibilizadas, depiladas recentemente ou com lesões.",
-        "Enxágue completamente sem deixar resíduos de grânulos.",
+        "Thoroughly wet the body with lukewarm water before applying the exfoliant, this softens the skin.",
+        "Apply in circular motions, always from bottom to top, towards the heart.",
+        "Spend more time and apply slightly more pressure on knees, elbows, and heels.",
+        "Avoid recently shaved areas, sunburned areas, or any open wounds.",
+        "Rinse completely until you no longer feel any granules on the skin.",
       ],
       dicasExtras: [
-        "Esfolie o corpo apenas 1 a 2 vezes por semana.",
-        "Nunca use esfoliantes corporais pesados no rosto.",
-        "Sempre aplique um bom creme corporal logo após o enxágue.",
+        "Exfoliate the body 1 to 2 times per week; every day attacks the skin's protective barrier.",
+        "Never use body exfoliant (coarse grains) on the face, the skin there is much thinner.",
+        "Apply moisturizer within 3 minutes after rinsing, that's when the skin absorbs best.",
       ],
-      tutorialCasaTitulo: "Faça em casa: esfoliante corporal de café e coco",
+      tutorialCasaTitulo: "DIY: coffee and coconut body scrub",
       tutorialCasaMateriais: [
-        "2 colheres de sopa de borra de café (ou café moído)",
-        "2 colheres de sopa de óleo de coco ou azeite de oliva",
-        "1 colher de sopa de açúcar mascavo ou refinado",
+        "2 tablespoons of coffee grounds (or ground coffee)",
+        "2 tablespoons of coconut oil or olive oil",
+        "1 tablespoon of brown or refined sugar",
       ],
       tutorialCasaPassos: [
-        "Em um recipiente limpo, misture a borra de café, o óleo e o açúcar até formar uma pasta.",
-        "No banho, com o corpo molhado, aplique a mistura nas pernas, braços e tronco.",
-        "Massageie com movimentos circulares e suave pressão por 2 a 3 minutos.",
-        "Enxágue com água morna até remover todos os grãos de café.",
+        "Mix the coffee grounds, oil, and sugar in a jar until forming a uniform paste.",
+        "In the shower, with the body already wet, apply the mixture to legs, arms, and torso.",
+        "Massage with circular motions and gentle pressure for 2 to 3 minutes.",
+        "Rinse with lukewarm water until removing all coffee and sugar residues.",
+        "Store the rest in a closed jar in the refrigerator for up to 5 days.",
       ],
     ),
 
-    // Aula 3 - Hidratação Corporal e Banho de Óleos
+    // Aula 3 - Selagem da Pele
     const _Aula(
-      titulo: "03. Selagem da Pele: óleos e hidratantes pós-banho",
+      titulo: "03. Skin Sealing: oils and post-bath moisturizers",
       imagem1:
-      "https://images.unsplash.com/photo-1608248597262-921473618a80?w=1000",
+          "https://images.unsplash.com/photo-1498843053639-170ff2122f35?w=1000",
       introducao:
-      "Após limpar e esfoliar, o segredo da pele luminosa é reter a umidade "
-          "no corpo. Os óleos corporais e os cremes densos funcionam de formas diferentes: "
-          "o hidratante repõe a água, enquanto o óleo cria uma barreira protetora que não "
-          "deixa essa hidratação escapar.",
+          "Cleansing and exfoliating are not enough if the skin loses water immediately after. The true secret of luminous skin lies in sealing: the moisturizer replenishes water in the skin, while body oil creates a film that prevents this water from evaporating throughout the day. Using both together, in the right order, is what makes the difference between skin that hydrates for 1 hour and skin that hydrates all day.",
       imagem2:
-      "https://images.unsplash.com/photo-1617897903246-719242758050?w=1000",
-      dicaTitulo: "Técnica de selagem em 3 minutos",
+          "https://images.unsplash.com/photo-1642505173080-94af65712218?w=1000",
+      dicaTitulo: "3-minute sealing technique",
       passos: [
-        "Desligue o chuveiro e retire apenas o excesso de água com a mão.",
-        "Com a pele ainda úmida, aplique uma camada de creme ou loção corporal.",
-        "Para um brilho extra, finalize aplicando um óleo corporal por cima do hidratante.",
-        "Deixe o produto secar por 2 minutos antes de se vestir.",
+        "Turn off the shower and remove only the excess water with your hands, without drying completely.",
+        "With skin still damp, apply a generous layer of cream or body lotion.",
+        "For extra shine, finish with a few drops of body oil on top of the moisturizer.",
+        "Let the product absorb for about 2 minutes before getting dressed.",
       ],
       dicasExtras: [
-        "Óleos de banho sem enxágue devem ser aplicados na pele limpa e ainda molhada.",
-        "Locões com ureia ou manteiga de karité são ideais para peles extra secas.",
+        "Rinse-free bath oils should be applied directly to clean and still wet skin.",
+        "Lotions with urea or shea butter hold more water in very dry skin.",
+        "If your skin is oily, prefer lighter oils (like grape seed) in smaller amounts.",
       ],
-      tutorialCasaTitulo: "Faça em casa: óleo corporal pós-banho com aroma natural",
+      tutorialCasaTitulo: "DIY: post-bath body oil with natural aroma",
       tutorialCasaMateriais: [
-        "3 colheres de sopa de óleo de amêndoas doces",
-        "1 colher de sopa de óleo de semente de uva ou girassol",
-        "3 gotas de óleo essencial de lavanda ou camomila (opcional)",
+        "3 tablespoons of sweet almond oil",
+        "1 tablespoon of grape seed oil or sunflower oil",
+        "3 drops of lavender or chamomile essential oil (optional)",
       ],
       tutorialCasaPassos: [
-        "Misture os óleos em um frasco limpo e seco.",
-        "No banho, logo após desligar o chuveiro, espalhe algumas gotas nas pernas e braços.",
-        "Massageie levemente e seque o corpo com a toalha usando toques suaves.",
+        "Mix the oils in a clean, dry jar, shaking well before use.",
+        "Immediately after turning off the shower, spread a few drops on legs and arms still damp.",
+        "Massage gently and finish drying the body with gentle towel touches.",
       ],
     ),
 
-    // Aula 4 - Prevenção de Pelos Encravados e Keratosis Pilaris
+    // Aula 4 - Cuidados Especiais
     const _Aula(
-      titulo: "04. Cuidados Especiais: rugosidade e pelos encravados",
+      titulo: "04. Special Care: roughness and ingrown hairs",
       imagem1:
-      "https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=1000",
+          "https://images.unsplash.com/photo-1673847401550-fd92f05614b9?w=1000",
       introducao:
-      "Bolinhas vermelhas nos braços (queratose pilar) e pelos encravados nas pernas "
-          "e virilha são queixas comuns. Combinar a esfoliação física correta com ativos "
-          "químicos suaves no banho ajuda a desobstruir os folículos sem agredir ou inflamar a pele.",
-      dicaTitulo: "Rotina de prevenção no banho",
+          "Rough bumps on the arms (keratosis pilaris) and ingrown hairs on the legs and groin are among the most common complaints about body skin. The good news is that most of these cases improve significantly just by adjusting the bath and shaving routine, without needing any expensive products. In this lesson, you learn to combine physical exfoliation with small habit adjustments to unclog follicles without irritating the skin.",
+      dicaTitulo: "Prevention routine in the bath",
       passos: [
-        "Evite raspar a pele a seco; use sempre sabonete ou espuma de barbear.",
-        "Substitua lâminas cegas frequentemente para evitar atrito e cortes.",
-        "Faça a esfoliação corporal 24 horas antes da depilação, nunca no mesmo momento.",
-        "Aplique um hidratante calmante logo após secar a pele.",
+        "Never shave dry skin; always use soap, oil, or foam before the blade.",
+        "Change the blade frequently: dull blades increase friction and irritation significantly.",
+        "Exfoliate the body 24 hours before shaving, never in the same bath as shaving.",
+        "Always apply soothing moisturizer immediately after drying the skin, even on non-shaving days.",
+        "Prefer to shave in the direction of hair growth to reduce ingrown hairs.",
       ],
       dicasExtras: [
-        "Não esprema ou cutuque bolinhas e pelos encravados.",
-        "Roupas muito apertadas após o banho favorecem o encravamento dos pelos.",
+        "Never squeeze or pick at bumps and ingrown hairs, this worsens inflammation.",
+        "Very tight clothes immediately after the bath favor ingrown hairs.",
+        "Mild acids (like lactic acid) in body lotions help significantly with keratosis pilaris.",
       ],
-      tutorialCasaTitulo: "Faça em casa: compressa calmante de camomila",
+      tutorialCasaTitulo: "DIY: chamomile soothing compress",
       tutorialCasaMateriais: [
-        "1 sachê ou 2 colheres de flores de camomila",
-        "200ml de água fervente",
-        "1 disco de algodão ou pano limpo",
+        "1 sachet or 2 tablespoons of chamomile flowers",
+        "200ml of boiling water",
+        "1 cotton pad or clean cloth",
       ],
       tutorialCasaPassos: [
-        "Prepare o chá de camomila concentrado e espere esfriar completamente.",
-        "Após o banho, molhe o algodão no chá frio e aplique sobre as áreas irritadas.",
-        "Deixe agir por 10 minutos para acalmar a pele e reduzir a vermelhidão.",
+        "Prepare a concentrated chamomile tea and let it cool completely in the refrigerator.",
+        "After the bath, soak the cotton in the iced tea and apply to irritated areas.",
+        "Let it act for 10 minutes to calm redness before putting on any clothes.",
       ],
     ),
 
-    // Aula 5 - O Ritual do Banho Relaxante e Spa em Casa
+    // Aula 5 - Escolha certa de produtos
     const _Aula(
-      titulo: "05. Ritual Spa em Casa: o banho de autocuidado completo",
+      titulo: "05. Right Choice: soap, shower gel, or bar?",
       imagem1:
-      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1000",
+          "https://images.unsplash.com/photo-1700107650111-86f1b672ee35?w=1000",
       introducao:
-      "Transforme seu banho semanal em um momento de reconexão e spa em casa. "
-          "Unindo o controle de iluminação, aromas e todas as etapas de limpeza, esfoliação "
-          "e hidratação profunda, você garante uma pele radiante e renovada para o resto da semana.",
+          "Not every soap works for every skin type, and this is the number one cause of dryness that many people don't even notice. Traditional bar soaps usually have a more alkaline pH, which attacks the skin's natural protection; gentle shower gels and syndet soaps (soap-free formula) preserve this barrier better. In this lesson, you learn to choose the right product for your skin type, instead of using the same soap out of habit.",
       imagem2:
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?w=1000",
-      dicaTitulo: "Passo a passo do ritual semanal",
+          "https://images.unsplash.com/photo-1700107648901-02970a78a2cc?w=1000",
+      dicaTitulo: "How to choose your ideal bath product",
       passos: [
-        "Prepare o ambiente: diminua a luz e coloque uma música relaxante.",
-        "Inicie com a limpeza corporal morna e higienização das mãos e pés.",
-        "Aplique o esfoliante corporal em todo o corpo com calma.",
-        "Enxágue completamente e faça a nutrição com óleos ou máscaras corporais.",
-        "Finalize com uma automassagem relaxante ao aplicar o creme pós-banho.",
+        "Dry skin: prefer creamy gels or bath oils, with ingredients like oatmeal or shea butter.",
+        "Oily skin: opt for light shower gels that clean without leaving a heavy feeling.",
+        "Sensitive skin: look for formulas without strong fragrance and without alcohol in the ingredient list.",
+        "Avoid very perfumed soaps in daily use; save them for special occasions.",
+        "Test a new product for 1 week before switching permanently, to notice if your skin reacted well.",
       ],
       dicasExtras: [
-        "Reserve de 20 a 30 minutos uma vez por semana para este ritual completo.",
-        "Evite o uso de celulares ou telas durante o seu momento de spa.",
+        "Very foamy soaps don't always clean better; excess foam can dry out more.",
+        "Keep bar soap out of direct contact with water between uses, to make it last longer.",
+        "If the skin itches or feels tight right after the bath, it's a sign to change products.",
       ],
-      tutorialCasaTitulo: "Faça em casa: escalda-pés relaxante pós-banho",
+      tutorialCasaTitulo: "DIY: simple pH test of your soap",
       tutorialCasaMateriais: [
-        "1 bacia com água morna",
-        "2 colheres de sopa de sal grosso",
-        "1 colher de chá de óleo vegetal ou 3 gotas de óleo essencial",
+        "Your current soap or shower gel",
+        "1 pH indicator paper strip (found in pharmacies)",
+        "A little water",
       ],
       tutorialCasaPassos: [
-        "Após o banho, encha a bacia com água morna e adicione o sal grosso e o óleo.",
-        "Mergulhe os pés e relaxe por 15 minutos.",
-        "Seque bem os pés, especialmente entre os dedos, e finalize com um creme denso.",
+        "Dilute a small amount of the product in water until forming a light foam.",
+        "Moisten the pH indicator paper strip in this mixture for a few seconds.",
+        "Compare the strip color with the pH scale: the closer to 5.5, the gentler for the skin.",
+        "If the result is very alkaline (above 8), consider switching to a gentler product.",
+      ],
+    ),
+
+    // Aula 6 - Cuidado com áreas específicas
+    const _Aula(
+      titulo: "06. Care with Specific Areas: armpits, groin, and décolletage",
+      imagem1:
+          "https://images.unsplash.com/photo-1587023705112-34a9b4fe8317?w=1000",
+      introducao:
+          "Some body regions require different attention than the rest: armpits and groin have skin folds that retain more friction and moisture, which can cause darkening and irritation; the décolletage is one of the first areas to show signs of sun and dryness. In this lesson, you learn specific care for these regions, which are often forgotten in the standard bath routine.",
+      dicaTitulo: "Routine for fold and friction areas",
+      passos: [
+        "Dry armpits and groin very well after the bath, standing moisture favors irritations.",
+        "Avoid changing deodorant too frequently; armpit skin sensitizes easily.",
+        "Exfoliate these areas more gently and less frequently than the rest of the body.",
+        "Treat the décolletage as an extension of the face: apply sunscreen there too, every day.",
+        "Prefer clothes in natural fabrics in hotter body areas to reduce friction.",
+      ],
+      dicasExtras: [
+        "Darkening in armpits and groin usually comes from friction and shaving, not lack of hygiene.",
+        "Mild acids at night (like low-concentration glycolic acid) help uniformize these areas.",
+        "Avoid shaving and exfoliating the same area on the same day, this adds irritation.",
+      ],
+      tutorialCasaTitulo: "DIY: gentle exfoliant for sensitive areas",
+      tutorialCasaMateriais: [
+        "1 tablespoon of finely ground oatmeal",
+        "1 tablespoon of unsweetened natural yogurt",
+        "1 teaspoon of honey",
+      ],
+      tutorialCasaPassos: [
+        "Mix the ingredients until forming a homogeneous and not too thick paste.",
+        "Apply with fingertips to armpits, groin, or décolletage, without pressing hard.",
+        "Massage for 30 seconds in light circular motions.",
+        "Rinse with lukewarm water and finish with a moisturizer specific for sensitive skin.",
+      ],
+    ),
+
+    // Aula 7 - Rotina pós-praia e pós-sol
+    const _Aula(
+      titulo: "07. Post-Beach and Post-Sun Routine: repairing the skin",
+      imagem1:
+          "https://images.unsplash.com/photo-1669212408959-fdde3b2ed6a2?w=1000",
+      introducao:
+          "After a day of sun, salt, and sand, the skin becomes drier, more sensitive, and needs different care than a regular bath. Quick rinsing and applying any moisturizer is not enough: the priority at this moment is to soothe, replenish water, and protect the skin barrier before it peels or irritates.",
+      imagem2:
+          "https://images.unsplash.com/photo-1681091611608-b5e6136f1a5d?w=1000",
+      dicaTitulo: "Post-sun bath, step by step",
+      passos: [
+        "Take a lukewarm (never hot) bath as soon as possible to remove salt, sand, and sunscreen.",
+        "Use a very mild soap, without scrubbing the skin with force at this moment.",
+        "Avoid exfoliating on the same day of intense sun; wait at least 24 to 48 hours.",
+        "Apply a moisturizer with aloe vera or panthenol while the skin is still damp.",
+        "Drink plenty of water throughout the day to help replenish the skin's fluids.",
+      ],
+      dicasExtras: [
+        "If the skin is very red or hot to the touch, prioritize cold compresses before moisturizer.",
+        "Avoid products with alcohol or strong fragrance on newly sun-exposed skin.",
+        "Reinforce moisturizer at night in the following days, the skin continues recovering for several days.",
+      ],
+      tutorialCasaTitulo: "DIY: aloe vera soothing gel",
+      tutorialCasaMateriais: [
+        "1 fresh aloe vera leaf, or 3 tablespoons of pure aloe vera gel",
+        "1 teaspoon of coconut oil (optional, for very dry skin)",
+      ],
+      tutorialCasaPassos: [
+        "If using the fresh leaf, cut it in half and remove the transparent pulp with a spoon.",
+        "Blend the pulp in a blender until it becomes a homogeneous gel (skip this step if using ready-made gel).",
+        "Mix the coconut oil, if using, until well incorporated.",
+        "Apply generously to the most sun-exposed areas and let it act without rinsing.",
+        "Store the rest in the refrigerator for up to 3 days.",
+      ],
+    ),
+
+    // Aula 8 - Ritual Spa em Casa
+    const _Aula(
+      titulo: "08. Home Spa Ritual: the complete self-care bath",
+      imagem1:
+          "https://images.unsplash.com/photo-1544717304-a2db4a7b16ee?w=1000",
+      introducao:
+          "It's time to bring together everything you learned in the module into a complete ritual, spa-style, to do once a week. Combining environment, aroma, and all stages of cleansing, exfoliation, and deep hydration in a single session is what guarantees visibly renewed skin, and it's also one of the most effective self-care moments for relaxing the mind.",
+      imagem2:
+          "https://images.unsplash.com/photo-1676192651289-92ddbb55c26b?w=1000",
+      dicaTitulo: "Step by step of the complete weekly ritual",
+      passos: [
+        "Prepare the environment: dim the lights, play calm music, and separate all products before starting.",
+        "Start with body cleansing in lukewarm water, without rushing.",
+        "Apply the body exfoliant all over the body, with circular motions and calm.",
+        "Rinse completely and perform nutrition with oil or body mask on the driest areas.",
+        "Finish with a relaxing self-massage when applying the post-bath cream, shoulders and legs included.",
+      ],
+      dicasExtras: [
+        "Reserve 20 to 30 minutes, once a week, just for this complete ritual.",
+        "Avoid the cell phone or any screen during this moment, it's part of the relaxing effect.",
+        "Do this ritual always on the same day of the week until it becomes an automatic habit.",
+      ],
+      tutorialCasaTitulo: "DIY: relaxing foot bath post-bath",
+      tutorialCasaMateriais: [
+        "1 basin with lukewarm water",
+        "2 tablespoons of coarse salt",
+        "1 teaspoon of vegetable oil or 3 drops of essential oil",
+      ],
+      tutorialCasaPassos: [
+        "After the bath, fill the basin with lukewarm water and add the coarse salt and oil.",
+        "Soak your feet and relax for 15 minutes, taking the opportunity to breathe deeply.",
+        "Dry your feet well, especially between the toes, and finish with a denser cream.",
       ],
     ),
   ];
@@ -210,7 +308,7 @@ class Modulo2Page extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFF16181A),
         title: const Text(
-          "Módulo 2 - Ritual do Banho e Esfoliação Corporal",
+          "Module 2 - Bath Ritual & Body Exfoliation",
           style: TextStyle(color: Colors.white, fontSize: 18),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
@@ -245,11 +343,15 @@ class Modulo2Page extends StatelessWidget {
                           userProgress.toggleModule(moduleId);
                         },
                         icon: Icon(
-                          concluido ? Icons.check_circle : Icons.radio_button_unchecked,
+                          concluido
+                              ? Icons.check_circle
+                              : Icons.radio_button_unchecked,
                           color: concluido ? Colors.green : Colors.white,
                         ),
                         label: Text(
-                          concluido ? "Módulo Concluído ✔" : "Marcar como Concluído",
+                          concluido
+                              ? "Module Completed ✔"
+                              : "Mark as Completed",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -257,12 +359,16 @@ class Modulo2Page extends StatelessWidget {
                           ),
                         ),
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: concluido ? const Color(0xFF1B382B) : const Color(0xFF22252A),
+                          backgroundColor: concluido
+                              ? const Color(0xFF1B382B)
+                              : const Color(0xFF22252A),
                           padding: const EdgeInsets.symmetric(vertical: 18),
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(12),
                             side: BorderSide(
-                              color: concluido ? Colors.green.withOpacity(0.5) : Colors.white.withOpacity(0.1),
+                              color: concluido
+                                  ? Colors.green.withOpacity(0.5)
+                                  : Colors.white.withOpacity(0.1),
                             ),
                           ),
                           elevation: 0,
@@ -352,267 +458,94 @@ class Modulo2Page extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
           fit: BoxFit.cover,
+          errorBuilder: (context, error, stackTrace) {
+            return Container(
+              color: const Color(0xFF16181A),
+              child: const Center(
+                child: Icon(Icons.broken_image, color: Colors.grey, size: 48),
+              ),
+            );
+          },
         ),
       ),
     );
   }
 
-  // Bloco de dica + tutorial passo a passo (versão curta / rotina).
+  // Card de "Dica" com passos numerados
   Widget _buildTutorial(String titulo, List<String> passos) {
     return Container(
-      width: double.infinity,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         color: const Color(0xFF16181A),
-        borderRadius: BorderRadius.circular(16),
+        borderRadius: BorderRadius.circular(12),
         border: Border.all(color: Colors.white.withOpacity(0.05)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
-            children: const [
-              Icon(Icons.lightbulb, color: Colors.green, size: 20),
-              SizedBox(width: 8),
-              Text(
-                "Dica",
-                style: TextStyle(
-                  color: Colors.green,
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
+            children: [
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                decoration: BoxDecoration(
+                  color: Colors.green.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(6),
+                ),
+                child: const Text(
+                  "Tip",
+                  style: TextStyle(
+                    color: Colors.green,
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Text(
+                  titulo,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ],
-          ),
-          const SizedBox(height: 10),
-          Text(
-            titulo,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 17,
-              fontWeight: FontWeight.bold,
-            ),
           ),
           const SizedBox(height: 16),
-          for (int i = 0; i < passos.length; i++)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 24,
-                    height: 24,
-                    alignment: Alignment.center,
-                    decoration: const BoxDecoration(
-                      color: Color(0xFF1B382B),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Text(
-                      "${i + 1}",
-                      style: const TextStyle(
-                        color: Colors.green,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      passos[i],
-                      style: TextStyle(
-                        color: Colors.grey[300],
-                        fontSize: 14,
-                        height: 1.4,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-
-  // Bloco de tutorial caseiro: materiais + modo de preparo.
-  Widget _buildTutorialCasa(
-      String titulo, List<String> materiais, List<String> passos) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: const Color(0xFF241A12),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.orange.withOpacity(0.15)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: const [
-              Icon(Icons.home_repair_service, color: Colors.orange, size: 20),
-              SizedBox(width: 8),
-              Text(
-                "Tutorial: faça em casa",
-                style: TextStyle(
-                  color: Colors.orange,
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          Text(
-            titulo,
-            style: const TextStyle(
-              color: Colors.white,
-              fontSize: 17,
-              fontWeight: FontWeight.bold,
-            ),
-          ),
-          const SizedBox(height: 18),
-
-          // O que você vai precisar
-          Row(
-            children: const [
-              Icon(Icons.shopping_basket_outlined, color: Colors.orangeAccent, size: 16),
-              SizedBox(width: 6),
-              Text(
-                "O que você vai precisar",
-                style: TextStyle(
-                  color: Colors.orangeAccent,
-                  fontSize: 13,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          for (final item in materiais)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 6),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Icon(Icons.circle, size: 6, color: Colors.orangeAccent),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Text(
-                      item,
-                      style: TextStyle(
-                        color: Colors.grey[300],
-                        fontSize: 14,
-                        height: 1.4,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-          const SizedBox(height: 18),
-
-          // Modo de preparo
-          Row(
-            children: const [
-              Icon(Icons.checklist, color: Colors.orangeAccent, size: 16),
-              SizedBox(width: 6),
-              Text(
-                "Modo de preparo",
-                style: TextStyle(
-                  color: Colors.orangeAccent,
-                  fontSize: 13,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 10),
-          for (int i = 0; i < passos.length; i++)
-            Padding(
-              padding: const EdgeInsets.only(bottom: 12),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Container(
-                    width: 24,
-                    height: 24,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                      color: Colors.orange.withOpacity(0.15),
-                      shape: BoxShape.circle,
-                    ),
-                    child: Text(
-                      "${i + 1}",
-                      style: const TextStyle(
-                        color: Colors.orangeAccent,
-                        fontSize: 12,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                  const SizedBox(width: 12),
-                  Expanded(
-                    child: Text(
-                      passos[i],
-                      style: TextStyle(
-                        color: Colors.grey[300],
-                        fontSize: 14,
-                        height: 1.4,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-        ],
-      ),
-    );
-  }
-
-  // Bloco de dicas extras.
-  Widget _buildDicasExtras(List<String> dicas) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(20),
-      decoration: BoxDecoration(
-        color: const Color(0xFF16181A).withOpacity(0.6),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.05)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: const [
-              Icon(Icons.star, color: Colors.amber, size: 18),
-              SizedBox(width: 8),
-              Text(
-                "Dicas extras",
-                style: TextStyle(
-                  color: Colors.amber,
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 12),
-          for (final dica in dicas)
-            Padding(
+          ...passos.asMap().entries.map((entry) {
+            int index = entry.key;
+            String passo = entry.value;
+            return Padding(
               padding: const EdgeInsets.only(bottom: 8),
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text("•  ", style: TextStyle(color: Colors.grey)),
+                  Container(
+                    width: 24,
+                    height: 24,
+                    decoration: BoxDecoration(
+                      color: Colors.green.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "${index + 1}",
+                        style: const TextStyle(
+                          color: Colors.green,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
                   Expanded(
                     child: Text(
-                      dica,
+                      passo,
                       style: TextStyle(
-                        color: Colors.grey[400],
+                        color: Colors.grey[300],
                         fontSize: 14,
                         height: 1.4,
                       ),
@@ -620,7 +553,186 @@ class Modulo2Page extends StatelessWidget {
                   ),
                 ],
               ),
+            );
+          }).toList(),
+        ],
+      ),
+    );
+  }
+
+  // Card de "Tutorial: faça em casa" com materiais e passos
+  Widget _buildTutorialCasa(
+    String titulo,
+    List<String> materiais,
+    List<String> passos,
+  ) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: const Color(0xFF16181A),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.white.withOpacity(0.05)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              const Icon(
+                Icons.home_work_outlined,
+                color: Colors.green,
+                size: 20,
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  titulo,
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+          const Text(
+            "What you will need",
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 13,
+              fontWeight: FontWeight.bold,
             ),
+          ),
+          const SizedBox(height: 8),
+          ...materiais.map((material) {
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 4),
+              child: Row(
+                children: [
+                  const Icon(
+                    Icons.check_circle_outline,
+                    color: Colors.green,
+                    size: 14,
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      material,
+                      style: TextStyle(
+                        color: Colors.grey[300],
+                        fontSize: 13,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }).toList(),
+          const SizedBox(height: 16),
+          const Text(
+            "Preparation steps",
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 13,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 8),
+          ...passos.asMap().entries.map((entry) {
+            int index = entry.key;
+            String passo = entry.value;
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 24,
+                    height: 24,
+                    decoration: BoxDecoration(
+                      color: Colors.green.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "${index + 1}",
+                        style: const TextStyle(
+                          color: Colors.green,
+                          fontSize: 12,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Text(
+                      passo,
+                      style: TextStyle(
+                        color: Colors.grey[300],
+                        fontSize: 14,
+                        height: 1.4,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }).toList(),
+        ],
+      ),
+    );
+  }
+
+  // Card de "Dicas extras"
+  Widget _buildDicasExtras(List<String> dicas) {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      decoration: BoxDecoration(
+        color: const Color(0xFF16181A),
+        borderRadius: BorderRadius.circular(12),
+        border: Border.all(color: Colors.white.withOpacity(0.05)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            "Extra tips",
+            style: TextStyle(
+              color: Colors.grey,
+              fontSize: 13,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          const SizedBox(height: 12),
+          ...dicas.map((dica) {
+            return Padding(
+              padding: const EdgeInsets.only(bottom: 8),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Icon(
+                    Icons.lightbulb_outline,
+                    color: Colors.green,
+                    size: 16,
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      dica,
+                      style: TextStyle(
+                        color: Colors.grey[300],
+                        fontSize: 13,
+                        height: 1.4,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            );
+          }).toList(),
         ],
       ),
     );

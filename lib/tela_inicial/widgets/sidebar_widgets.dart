@@ -19,12 +19,12 @@ class QuoteCard extends StatelessWidget {
           const Text("“", style: TextStyle(color: Colors.green, fontSize: 32, height: 0.8)),
           const SizedBox(height: 8),
           const Text(
-            "Disciplina hoje,\ntransformação amanhã.",
+            'Discipline today,\ntransformation tomorrow.',
             style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold, height: 1.3),
           ),
           const SizedBox(height: 16),
           Text(
-            "— The Brazilian Beauty Code",
+            '— The Brazilian Beauty Code',
             style: TextStyle(color: Colors.grey[500], fontSize: 12),
           ),
         ],
@@ -50,14 +50,14 @@ class QuickAccessCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            "⚡ Acesso rápido",
+            '⚡ Quick Access',
             style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 16),
-          _buildItem(Icons.playlist_play, "Meu Conteúdo"),
-          _buildItem(Icons.card_giftcard, "Meus Bônus"),
-          _buildItem(Icons.person_outline, "Minha Conta"),
-          _buildItem(Icons.headset_mic_outlined, "Suporte"),
+          _buildItem(Icons.playlist_play, 'My Content'),
+          _buildItem(Icons.card_giftcard, 'My Bonuses'),
+          _buildItem(Icons.person_outline, 'My Account'),
+          _buildItem(Icons.headset_mic_outlined, 'Support'),
         ],
       ),
     );
@@ -98,12 +98,12 @@ class SupportCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            "Precisa de ajuda?",
+            'Need help?',
             style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 8),
           Text(
-            "Fale com nosso suporte sempre que precisar.",
+            'Talk to our support whenever you need.',
             style: TextStyle(color: Colors.grey[400], fontSize: 13),
           ),
           const SizedBox(height: 16),
@@ -112,7 +112,7 @@ class SupportCard extends StatelessWidget {
             child: ElevatedButton.icon(
               onPressed: onSupportPressed,
               icon: const Icon(Icons.chat_bubble_outline, size: 18, color: Colors.white),
-              label: const Text("Abrir Suporte", style: TextStyle(color: Colors.white, fontSize: 14)),
+              label: const Text('Open Support', style: TextStyle(color: Colors.white, fontSize: 14)),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.green[700],
                 padding: const EdgeInsets.symmetric(vertical: 12),

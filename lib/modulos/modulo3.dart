@@ -1,9 +1,8 @@
-
 import 'package:flutter/material.dart';
 
 import '../../services/user_progress.dart';
 
-/// Modelo simples para representar cada aula dentro do módulo.
+/// Simple model representing each lesson inside the module.
 class _Aula {
   final String titulo;
   final String imagem1;
@@ -35,171 +34,180 @@ class Modulo3Page extends StatelessWidget {
 
   final String moduleId = 'modulo_3';
 
-  // Lista das 5 aulas do módulo sobre Bronze, Brilho e Contorno Corporal.
+  // List of the 5 lessons in the Bronze, Glow & Body Contour module.
   static final List<_Aula> _aulas = [
-    // Aula 1 - O Bronze Saudável e Protegido
+    // Lesson 1 - The Healthy Tan
     const _Aula(
-      titulo: "01. O Bronze Saudável: tom dourado sem danificar a pele",
+      titulo: "01. The Healthy Tan: a golden glow without damaging your skin",
       imagem1:
-      "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000",
+      "https://images.unsplash.com/photo-1685979979782-759cbdd528ee?w=1000",
       introducao:
-      "O bronzeado brasileiro perfeito é aquele que traz vitalidade sem "
-          "comprometer a saúde e a elasticidade da pele. Queimaduras de sol causam "
-          "descascamento e manchas. Nesta aula, você vai aprender a construir um bronzeado "
-          "gradual, uniforme e duradouro utilizando a proteção solar correta e aceleradores naturais.",
-      tutorialCasaTitulo: "Preparo da pele pré-sol com acelerador natural",
+      "A real Brazilian tan is never about lying in the sun until you burn — it's "
+          "built gradually, over days, with protection first. Brazilian women rarely skip "
+          "sunscreen at the beach; instead, they combine SPF with natural tan-boosting oils "
+          "like carrot or annatto (urucum) oil to deepen color while still protecting the "
+          "skin barrier. In this lesson, you'll learn how to build a golden, even tone that "
+          "actually lasts, instead of one that peels and fades in a week.",
+      tutorialCasaTitulo: "Pre-sun skin prep with a natural tan accelerator",
       tutorialCasaMateriais: [
-        "Protetor solar corporal com FPS 30 ou superior",
-        "1 colher de sopa de óleo de urucum ou cenoura",
-        "Água potável em borrifador",
+        "Body sunscreen, SPF 30 or higher",
+        "1 tablespoon of carrot oil or annatto (urucum) oil",
+        "A spray bottle filled with water",
       ],
       tutorialCasaPassos: [
-        "Esfolie o corpo 24 horas antes da exposição ao sol para garantir tom uniforme.",
-        "Aplique o protetor solar em todo o corpo 20 minutos antes de sair de casa.",
-        "Após a absorção do protetor, espalhe uma leve camada do óleo de urucum/cenoura nas áreas expostas.",
-        "Borrife água na pele periodicamente durante a exposição e limite a sessão a 30 minutos por lado.",
+        "Exfoliate your body 24 hours before sun exposure for a more even tone.",
+        "Apply sunscreen all over your body 20 minutes before heading outside.",
+        "Once the sunscreen has absorbed, add a thin layer of the carrot or annatto oil on exposed areas.",
+        "Mist your skin with water every so often and limit direct sun exposure to about 30 minutes per side.",
       ],
     ),
 
-    // Aula 2 - Iluminação e Óleos Iluminadores Corporais
+    // Lesson 2 - The Glow Secret
     const _Aula(
-      titulo: "02. O Segredo do Glow: óleos e cremes iluminadores",
+      titulo: "02. The Glow Secret: shimmer oils and illuminating creams",
       imagem1:
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1000",
+      "https://images.unsplash.com/photo-1629271920136-ff713a97b447?w=1000",
       introducao:
-      "O 'efeito pele de seda' com brilho dourado e acetinado é a assinatura do "
-          "glow tropical. Aprenda a aplicar iluminadores corporais nos pontos estratégicos "
-          "de luz do corpo para destacar suas curvas e criar uma aparência radiante "
-          "em eventos, fotos ou no dia a dia.",
+      "That silky, sun-kissed shimmer you see on Brazilian skin isn't luck — it's "
+          "a small trick most women do without even thinking about it: mixing a few drops "
+          "of shimmer oil into body lotion before heading out. The goal isn't to look "
+          "sparkly, it's to catch the light in exactly the right places to make skin look "
+          "healthier and more awake. Here you'll learn where to apply it for the most "
+          "natural, expensive-looking effect.",
       imagem2:
-      "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1000",
-      dicaTitulo: "Pontos estratégicos de iluminação corporal",
+      "https://images.unsplash.com/photo-1562261150-0989084c593e?w=1000",
+      dicaTitulo: "Strategic highlight points on the body",
       passos: [
-        "Aplique o iluminador ao longo dos ossos da saboneteira (clavículas) e ombros.",
-        "Trace uma linha vertical no centro das pernas e braços para alongar a silhueta.",
-        "Espalhe bem as bordas usando as mãos para evitar acúmulos de pigmento ou divisões marcadas.",
-        "Deixe o produto secar completamente antes de se vestir para não manchar o tecido.",
+        "Apply shimmer oil along the collarbones and the tops of the shoulders.",
+        "Sweep a light vertical line down the center of the shins and forearms to elongate the silhouette.",
+        "Blend the edges well with your hands so there's no visible line or buildup of shimmer.",
+        "Let the product fully dry before getting dressed, so it doesn't transfer onto clothes.",
       ],
       dicasExtras: [
-        "Misture algumas gotas de iluminador líquido no seu hidratante diário para um brilho sutil.",
-        "Iluminadores com partículas finas (douradas ou bronzes) funcionam melhor em peles quentes.",
+        "Mix a few drops of liquid highlighter into your everyday lotion for a subtle, all-over glow.",
+        "Fine-shimmer, gold or bronze formulas tend to look the most natural on warm skin tones.",
       ],
-      tutorialCasaTitulo: "Faça em casa: óleo corporal iluminador dourado",
+      tutorialCasaTitulo: "Make your own golden shimmer body oil",
       tutorialCasaMateriais: [
-        "50ml de óleo corporal leve (amêndoas, semente de uva ou coco líquido)",
-        "1/2 colher de chá de sombra iluminadora dourada/bronze mineral em pó",
-        "1 frasco dosador limpo com tampa",
+        "50ml of a light body oil (almond, grapeseed, or liquid coconut oil)",
+        "1/2 teaspoon of finely milled gold or bronze mineral eyeshadow",
+        "1 clean pump or dropper bottle",
       ],
       tutorialCasaPassos: [
-        "Raspe um pouco da sombra iluminadora até obter um pó bem fino.",
-        "Coloque o pó dentro do frasco contendo o óleo vegetal.",
-        "Agite energicamente antes de cada uso até espalhar todo o brilho.",
-        "Aplique nos braços, ombros e pernas antes de sair.",
+        "Crush the eyeshadow with the back of a spoon until it's a very fine powder.",
+        "Add the powder into the bottle along with the body oil.",
+        "Shake well before every use so the shimmer stays evenly distributed.",
+        "Apply on shoulders, collarbones, shins and arms before heading out.",
       ],
     ),
 
-    // Aula 3 - Contorno Corporal e Ilusão de Óptica
+    // Lesson 3 - Body Contour
     const _Aula(
-      titulo: "03. Contorno Corporal: definindo curvas com luz e sombra",
+      titulo: "03. Body Contour: sculpting curves with light and shadow",
       imagem1:
-      "https://images.unsplash.com/photo-1519415518370-e45b25144578?w=1000",
+      "https://images.unsplash.com/photo-1663667858383-b5d5e62d0152?w=1000",
       introducao:
-      "A técnica de luz e sombra (sombra para rebaixar e luz para projetar) "
-          "funciona perfeitamente no corpo. É possível realçar a definição dos músculos, "
-          "afinar visualmente a cintura e valorizar as pernas utilizando bronzeadores e "
-          "autobronzeadores líquidos ou em pó.",
+      "The same light-and-shadow logic used in face makeup — shadow to recede, "
+          "light to project — works just as well on the body. With the right bronzer and "
+          "highlighter placement, you can visually define muscle tone, slim the waistline, "
+          "and enhance the shape of your legs, all without any actual change to your body. "
+          "It's a technique many Brazilian dancers and influencers use before photoshoots "
+          "or beach days.",
       imagem2:
-      "https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?w=1000",
-      dicaTitulo: "Técnica de contorno em 4 passos",
+      "https://images.unsplash.com/photo-1558700864-0f4b0b44fd5d?w=1000",
+      dicaTitulo: "4-step body contour technique",
       passos: [
-        "Identifique a sombra natural das pernas (laterais internas e externas) e do abdômen.",
-        "Com um pincel grande ou esponja, aplique um bronzer 2 tons acima do seu tom de pele nessas cavidades.",
-        "Aplique o iluminador no centro das coxas, canelas e centro dos braços.",
-        "Esfume em movimentos circulares até eliminar qualquer linha demarcada.",
+        "Identify the natural shadow areas of your legs (inner and outer sides) and stomach.",
+        "Using a large brush or sponge, apply a bronzer 2 shades deeper than your skin tone in those hollows.",
+        "Apply highlighter down the center of the thighs, shins, and the middle of the arms.",
+        "Blend everything in circular motions until there are no visible lines left.",
       ],
       dicasExtras: [
-        "Prefira produtos corporais em mousse para maior durabilidade ao longo do dia.",
-        "Evite tons de contorno muito alaranjados; prefira subtons neutros ou frios.",
+        "Mousse-based body products tend to last longer through the day than powder formulas.",
+        "Avoid overly orange contour shades; go for neutral or slightly cool undertones instead.",
       ],
-      tutorialCasaTitulo: "Faça em casa: bronzer corporal instantâneo lavável",
+      tutorialCasaTitulo: "Make a washable instant body bronzer",
       tutorialCasaMateriais: [
-        "2 colheres de sopa do seu creme hidratante corporal preferido",
-        "1/2 colher de chá de cacau em pó puro (sem açúcar)",
-        "1/4 de colher de chá de micas ou iluminação dourada",
+        "2 tablespoons of your favorite body lotion",
+        "1/2 teaspoon of pure, unsweetened cocoa powder",
+        "1/4 teaspoon of gold mica powder or shimmer eyeshadow",
       ],
       tutorialCasaPassos: [
-        "Em um pote, misture o hidratante com o cacau em pó até atingir um tom bronze uniforme.",
-        "Adicione a mica dourada para dar o acabamento iluminado.",
-        "Aplique nas áreas desejadas para dar cor imediata; o efeito sai facilmente no banho.",
+        "In a small bowl, mix the lotion with the cocoa powder until you reach an even bronze tone.",
+        "Add the gold mica for a glowing finish and mix again.",
+        "Apply to the desired areas for instant color; it washes off easily in the shower.",
       ],
     ),
 
-    // Aula 4 - Autobronzeamento em Casa sem Manchas
+    // Lesson 4 - Flawless Self-Tanner
     const _Aula(
-      titulo: "04. Autobronzeador Perfeito: aplicação uniforme e duradoura",
+      titulo: "04. Flawless Self-Tanner: streak-free, long-lasting application",
       imagem1:
-      "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1000",
+      "https://images.unsplash.com/photo-1568026530336-f706373e9d78?w=1000",
       introducao:
-      "Os autobronzeadores garantem uma pele dourada o ano todo, sem necessidade "
-          "de exposição solar. Contudo, falhas na aplicação podem gerar manchas nas mãos, "
-          "pés e articulações. Nesta aula, você domina o método definitivo para aplicação de "
-          "mousse autobronzeadora sem falhas.",
-      dicaTitulo: "Passo a passo do autobronzeamento profissional",
+      "Self-tanner gives you that golden Brazilian glow year-round, with zero sun "
+          "exposure — but a rushed application is the most common reason people end up with "
+          "orange hands, patchy elbows, or dark ankle creases. In this lesson, you'll learn "
+          "the exact method professionals use to apply tanning mousse evenly from head to toe.",
+      dicaTitulo: "Step-by-step professional self-tanner routine",
       passos: [
-        "Faça a esfoliação e depilação 24 horas antes da aplicação.",
-        "Hidrate bem apenas as regiões secas: pés, calcanhares, joelhos, cotovelos e mãos.",
-        "Use uma luva aplicadora veludada espalhando a mousse em movimentos circulares contínuos.",
-        "Passe a luva 'quase seca' (com o resto de produto) nos pés e mãos por último.",
-        "Aguarde o tempo de pausa indicado na embalagem antes do primeiro enxágue sem sabonete.",
+        "Exfoliate and shave 24 hours before applying self-tanner, never on the same day.",
+        "Moisturize only the naturally dry areas: feet, heels, knees, elbows and hands.",
+        "Using a velvet tanning mitt, blend the mousse in continuous, circular motions.",
+        "Use the mitt with barely any product left on it to lightly go over hands and feet last.",
+        "Follow the develop time on the label before your first rinse — no soap on that first shower.",
       ],
       dicasExtras: [
-        "Caso fique com manchas nas mãos, use suco de limão ou bicarbonato para remover no mesmo dia.",
-        "Banhos muito quentes e esfregar a toalha forte reduzem a duração do autobronzeador.",
+        "If you get stained hands, lemon juice or baking soda can help lift the color the same day.",
+        "Very hot showers and rough towel-drying both shorten how long a self-tan actually lasts.",
       ],
-      tutorialCasaTitulo: "Faça em casa: guia de proteção de articulações",
+      tutorialCasaTitulo: "DIY joint and crease protection guide",
       tutorialCasaMateriais: [
-        "1 hidratante denso ou vaselina sólida",
-        "Discos de algodão",
+        "1 thick moisturizer or a bit of solid petroleum jelly",
+        "Cotton pads",
       ],
       tutorialCasaPassos: [
-        "Antes do autobronzeador, aplique uma camada reforçada de hidratante nos ossos dos tornozelos, joelhos e dobras das mãos.",
-        "Aguarde 5 minutos até absorção parcial.",
-        "Proceda com a aplicação do autobronzeador normalmente sobre todo o corpo.",
+        "Before applying self-tanner, dab a thicker layer of moisturizer on ankles, knees, and knuckle creases.",
+        "Let it sit for 5 minutes so it partially absorbs.",
+        "Apply your self-tanner normally over the rest of the body as usual.",
       ],
     ),
 
-    // Aula 5 - Pós-Bronze e Manutenção do Glow
+    // Lesson 5 - Maintaining the Glow
     const _Aula(
-      titulo: "05. Manutenção do Glow: hidratação pós-sol e longa duração",
+      titulo: "05. Maintaining The Glow: after-sun care and long-lasting color",
       imagem1:
-      "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1000",
+      "https://images.unsplash.com/photo-1729091773707-364e080627f2?w=1000",
       introducao:
-      "Conquistar o tom dourado é apenas metade do trabalho; mantê-lo radiante "
-          "sem descascar ou desbotar exige cuidados pós-bronze. Aprenda a nutrir a pele com "
-          "ingredientes calmantes e umectantes que prolongam a cor e preservam a elasticidade.",
+      "Getting the golden tone is only half the job — keeping it glowing without "
+          "peeling or fading takes real after-sun care. Brazilian beach culture treats this "
+          "step as non-negotiable: a cool shower right after the beach, a soothing lotion, "
+          "and plenty of water. On top of that, many Brazilians lean on beta-carotene-rich "
+          "foods, like carrots, pumpkin and papaya, which are believed to support a deeper, "
+          "longer-lasting tan from the inside out.",
       imagem2:
-      "https://images.unsplash.com/photo-1512290900673-3d02710343a4?w=1000",
-      dicaTitulo: "Rotina de manutenção da cor pós-sol",
+      "https://images.unsplash.com/photo-1544717304-a2db4a7b16ee?w=1000",
+      dicaTitulo: "Post-sun color maintenance routine",
       passos: [
-        "Tome banho frio ou morno imediatamente após voltar da praia ou piscina.",
-        "Utilize sabonetes ultra-hidratantes ou óleos de banho sem esfoliantes.",
-        "Aposte em pós-sol com Aloe Vera (Babosa) e Camomila para acalmar os tecidos.",
-        "Beba pelo menos 2,5L de água por dia para manter a derme hidratada de dentro para fora.",
+        "Take a cool or lukewarm shower as soon as you're back from the beach or pool.",
+        "Use an ultra-hydrating body wash or bath oil, and skip exfoliating scrubs that day.",
+        "Follow up with an after-sun lotion containing aloe vera and chamomile to calm the skin.",
+        "Drink at least 2.5 liters (about 85 oz) of water a day to keep skin hydrated from within.",
       ],
       dicasExtras: [
-        "Alimentos ricos em betacaroteno (cenoura, abóbora, mamão) aceleram a produção de melanina.",
-        "Evite esfoliações intensas nas 2 semanas seguintes para prolongar a cor.",
+        "Beta-carotene-rich foods like carrots, pumpkin and papaya are a Brazilian staple for supporting tan longevity.",
+        "Skip intense body exfoliation for the following 2 weeks to help the color last as long as possible.",
       ],
-      tutorialCasaTitulo: "Faça em casa: gel pós-sol refrescante de Aloe Vera e Chá Verde",
+      tutorialCasaTitulo: "Make a cooling aloe vera & green tea after-sun gel",
       tutorialCasaMateriais: [
-        "2 colheres de sopa de gel de Aloe Vera (natural ou industrializado puro)",
-        "50ml de chá verde bem concentrado e frio",
-        "Forma de gelo ou recipiente limpo",
+        "2 tablespoons of aloe vera gel (fresh or pure store-bought)",
+        "50ml of strong, chilled green tea",
+        "An ice cube tray or a clean container",
       ],
       tutorialCasaPassos: [
-        "Misture o gel de Aloe Vera com o chá verde frio até homogeneizar.",
-        "Despeje a mistura em formas de gelo e leve ao congelador.",
-        "Após o banho pós-sol, passe um cubo de gelo envolto em um pano fino sobre as áreas avermelhadas.",
+        "Mix the aloe vera gel with the cold green tea until fully combined.",
+        "Pour the mixture into an ice cube tray and freeze.",
+        "After your post-sun shower, wrap a cube in a thin cloth and gently glide it over any flushed areas.",
       ],
     ),
   ];
@@ -211,7 +219,7 @@ class Modulo3Page extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: const Color(0xFF16181A),
         title: const Text(
-          "Módulo 3 - Glow Natural: Bronze, Brilho e Contorno Corporal",
+          "Module 3 - Natural Glow: Bronze, Shine & Body Contour",
           style: TextStyle(color: Colors.white, fontSize: 18),
         ),
         iconTheme: const IconThemeData(color: Colors.white),
@@ -233,7 +241,7 @@ class Modulo3Page extends StatelessWidget {
                   if (i != _aulas.length - 1) const SizedBox(height: 48),
                 ],
 
-                // Botão Dinâmico de Concluir Módulo
+                // Dynamic "Mark module as complete" button
                 ListenableBuilder(
                   listenable: userProgress,
                   builder: (context, child) {
@@ -250,7 +258,7 @@ class Modulo3Page extends StatelessWidget {
                           color: concluido ? Colors.green : Colors.white,
                         ),
                         label: Text(
-                          concluido ? "Módulo Concluído ✔" : "Marcar como Concluído",
+                          concluido ? "Module Completed ✔" : "Mark As Completed",
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
@@ -280,7 +288,7 @@ class Modulo3Page extends StatelessWidget {
     );
   }
 
-  // Constrói o conteúdo completo de uma aula (título, imagens, textos, tutorial e dicas).
+  // Builds the full content of a lesson (title, images, texts, tutorial and tips).
   Widget _buildAula(_Aula aula) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -336,7 +344,7 @@ class Modulo3Page extends StatelessWidget {
     );
   }
 
-  // Card de imagem, no mesmo estilo visual dos outros módulos.
+  // Image card, same visual style used across the other modules.
   Widget _buildImagem(String url) {
     return Container(
       width: double.infinity,
@@ -358,7 +366,7 @@ class Modulo3Page extends StatelessWidget {
     );
   }
 
-  // Bloco de dica + tutorial passo a passo (versão curta / rotina).
+  // "Tip" block + short step-by-step routine.
   Widget _buildTutorial(String titulo, List<String> passos) {
     return Container(
       width: double.infinity,
@@ -376,7 +384,7 @@ class Modulo3Page extends StatelessWidget {
               Icon(Icons.lightbulb, color: Colors.green, size: 20),
               SizedBox(width: 8),
               Text(
-                "Dica",
+                "Tip",
                 style: TextStyle(
                   color: Colors.green,
                   fontSize: 14,
@@ -437,7 +445,7 @@ class Modulo3Page extends StatelessWidget {
     );
   }
 
-  // Bloco de tutorial caseiro: materiais + modo de preparo.
+  // Home tutorial block: materials + step-by-step preparation.
   Widget _buildTutorialCasa(
       String titulo, List<String> materiais, List<String> passos) {
     return Container(
@@ -456,7 +464,7 @@ class Modulo3Page extends StatelessWidget {
               Icon(Icons.home_repair_service, color: Colors.orange, size: 20),
               SizedBox(width: 8),
               Text(
-                "Tutorial: faça em casa",
+                "Tutorial: make it at home",
                 style: TextStyle(
                   color: Colors.orange,
                   fontSize: 14,
@@ -476,13 +484,13 @@ class Modulo3Page extends StatelessWidget {
           ),
           const SizedBox(height: 18),
 
-          // O que você vai precisar
+          // What you'll need
           Row(
             children: const [
               Icon(Icons.shopping_basket_outlined, color: Colors.orangeAccent, size: 16),
               SizedBox(width: 6),
               Text(
-                "O que você vai precisar",
+                "What you'll need",
                 style: TextStyle(
                   color: Colors.orangeAccent,
                   fontSize: 13,
@@ -516,13 +524,13 @@ class Modulo3Page extends StatelessWidget {
 
           const SizedBox(height: 18),
 
-          // Modo de preparo
+          // How to make it
           Row(
             children: const [
               Icon(Icons.checklist, color: Colors.orangeAccent, size: 16),
               SizedBox(width: 6),
               Text(
-                "Modo de preparo",
+                "How to make it",
                 style: TextStyle(
                   color: Colors.orangeAccent,
                   fontSize: 13,
@@ -574,7 +582,7 @@ class Modulo3Page extends StatelessWidget {
     );
   }
 
-  // Bloco de dicas extras.
+  // Extra tips block.
   Widget _buildDicasExtras(List<String> dicas) {
     return Container(
       width: double.infinity,
@@ -592,7 +600,7 @@ class Modulo3Page extends StatelessWidget {
               Icon(Icons.star, color: Colors.amber, size: 18),
               SizedBox(width: 8),
               Text(
-                "Dicas extras",
+                "Extra tips",
                 style: TextStyle(
                   color: Colors.amber,
                   fontSize: 14,

@@ -36,7 +36,7 @@ class BonusItemCard extends StatelessWidget {
             child: const Icon(Icons.picture_as_pdf, color: Colors.green, size: 28),
           ),
           const SizedBox(width: 20),
-          
+
           // Textos
           Expanded(
             child: Column(
@@ -60,7 +60,7 @@ class BonusItemCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 8),
                 Text(
-                  "Tamanho: $fileSize",
+                  "Size: $fileSize",
                   style: TextStyle(
                     color: Colors.grey[600],
                     fontSize: 12,
@@ -69,12 +69,12 @@ class BonusItemCard extends StatelessWidget {
               ],
             ),
           ),
-          
+
           // Botão de Download
           OutlinedButton.icon(
             onPressed: onDownload,
             icon: const Icon(Icons.download, size: 16, color: Colors.white),
-            label: const Text("Baixar Material", style: TextStyle(color: Colors.white, fontSize: 13)),
+            label: const Text('Download Material', style: TextStyle(color: Colors.white, fontSize: 13)),
             style: OutlinedButton.styleFrom(
               side: BorderSide(color: Colors.white.withOpacity(0.15)),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),

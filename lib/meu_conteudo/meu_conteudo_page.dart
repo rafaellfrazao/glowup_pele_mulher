@@ -24,7 +24,7 @@ class MeuConteudoPage extends StatelessWidget {
         children: [
           // Título da Página
           Text(
-            "Meu Conteúdo",
+            'My Content',
             style: TextStyle(
               color: Colors.white,
               fontSize: isMobileOrTablet ? 22 : 26,
@@ -33,7 +33,7 @@ class MeuConteudoPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            "Acesse todos os módulos e continue de onde parou.",
+            'Access all modules and pick up where you left off.',
             style: TextStyle(color: Colors.grey[400], fontSize: 13),
           ),
           const SizedBox(height: 24),
@@ -56,10 +56,10 @@ class MeuConteudoPage extends StatelessWidget {
                 children: [
                   // MÓDULO 01
                   ConteudoCard(
-                    title: "Módulo 01: Fundamentos da Pele Brasileira",
+                    title: 'Module 01: Fundamentals of Brazilian Skin',
                     subtitle: isModulo1Concluido
-                        ? "4 aulas disponíveis • Concluído"
-                        : "4 aulas disponíveis • Em andamento",
+                        ? "4 lessons available • Completed"
+                        : "4 lessons available • In progress",
                     imageUrl:
                     "https://images.unsplash.com/photo-1670201203116-26644750a726?w=200",
                     statusColor: isModulo1Concluido
@@ -78,10 +78,10 @@ class MeuConteudoPage extends StatelessWidget {
 
                   // MÓDULO 02
                   ConteudoCard(
-                    title: "Módulo 02: Ritual do Banho e Esfoliação Corporal",
+                    title: 'Module 02: Bath Ritual & Body Exfoliation',
                     subtitle: isModulo2Concluido
-                        ? "6 aulas disponíveis • Concluído"
-                        : "6 aulas disponíveis • Em andamento",
+                        ? "6 lessons available • Completed"
+                        : "6 lessons available • In progress",
                     imageUrl:
                     "https://images.unsplash.com/photo-1498843053639-170ff2122f35?w=200",
                     statusColor: isModulo2Concluido
@@ -100,18 +100,19 @@ class MeuConteudoPage extends StatelessWidget {
 
                   // MÓDULO 03
                   ConteudoCard(
-                    title: "Módulo 03: Glow Natural: Bronze, Brilho e Contorno Corporal",
+                    title: 'Module 03: Natural Glow: Tan, Shine, and Body Contour',
                     subtitle: !isModulo3Desbloqueado
-                        ? "5 aulas disponíveis • Bloqueado"
+                        ? "5 lessons available • Locked"
                         : (isModulo3Concluido
-                        ? "5 aulas disponíveis • Concluído"
-                        : "5 aulas disponíveis • Em andamento"),
+                        ? "5 lessons available • Completed"
+                        : "5 lessons available • In progress"),
                     imageUrl:
                     "https://images.unsplash.com/photo-1544717304-a2db4a7b16ee?w=200",
                     statusColor: !isModulo3Desbloqueado
                         ? Colors.grey
                         : (isModulo3Concluido ? Colors.green : Colors.greenAccent),
                     onAcessarPressed: () {
+                      
                       if (isModulo3Desbloqueado) {
                         Navigator.push(
                           context,
@@ -121,13 +122,13 @@ class MeuConteudoPage extends StatelessWidget {
                         );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
+                          SnackBar(
                             content: Text(
-                              "Conclua os Módulos 1 e 2 para desbloquear!",
-                              style: TextStyle(color: Colors.white),
+                              'Complete Modules 1 and 2 to unlock!',
+                              style: const TextStyle(color: Colors.white),
                             ),
                             backgroundColor: Colors.redAccent,
-                            duration: Duration(seconds: 2),
+                            duration: const Duration(seconds: 2),
                           ),
                         );
                       }
@@ -137,18 +138,19 @@ class MeuConteudoPage extends StatelessWidget {
 
                   // MÓDULO 04
                   ConteudoCard(
-                    title: "Módulo 04: Manutenção e Estilo de Vida Feminina",
+                    title: 'Module 04: Maintenance and Women\'s Lifestyle',
                     subtitle: !isModulo4Desbloqueado
-                        ? "5 aulas disponíveis • Bloqueado"
+                        ? "5 lessons available • Locked"
                         : (isModulo4Concluido
-                        ? "5 aulas disponíveis • Concluído"
-                        : "5 aulas disponíveis • Em andamento"),
+                        ? "5 lessons available • Completed"
+                        : "5 lessons available • In progress"),
                     imageUrl:
                     "https://images.unsplash.com/photo-1775642545087-315847882556?w=200",
                     statusColor: !isModulo4Desbloqueado
                         ? Colors.grey
                         : (isModulo4Concluido ? Colors.green : Colors.greenAccent),
                     onAcessarPressed: () {
+                      
                       if (isModulo4Desbloqueado) {
                         Navigator.push(
                           context,
@@ -158,17 +160,19 @@ class MeuConteudoPage extends StatelessWidget {
                         );
                       } else {
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
+                          SnackBar(
                             content: Text(
-                              "Conclua os Módulos 1, 2 e 3 para desbloquear!",
-                              style: TextStyle(color: Colors.white),
+                              'Complete Modules 1, 2, and 3 to unlock!',
+                              style: const TextStyle(color: Colors.white),
                             ),
                             backgroundColor: Colors.redAccent,
-                            duration: Duration(seconds: 2),
+                            duration: const Duration(seconds: 2),
                           ),
                         );
                       }
+                      
                     },
+
                   ),
                 ],
               );

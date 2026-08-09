@@ -3,7 +3,7 @@ import 'package:lowpage/tela_inicial/widgets/inicio_page.dart';
 import '../meu_conteudo/meu_conteudo_page.dart';
 import '../bonus/bonus_page.dart';
 import '../minha_conta/minha_conta_page.dart';
-import '../services/responsive.dart'; // Importando a classe que você criou
+import '../services/responsive.dart';
 
 class AppLayout extends StatefulWidget {
   final String userName;
@@ -60,12 +60,12 @@ class _AppLayoutState extends State<AppLayout> {
                   ),
                 ),
               ),
-              _buildMenuItem(0, Icons.home, "Início", isMobile: true),
-              _buildMenuItem(1, Icons.grid_view, "Meu Conteúdo", isMobile: true),
-              _buildMenuItem(2, Icons.card_giftcard, "Bônus", isMobile: true),
-              _buildMenuItem(3, Icons.person_outline, "Minha Conta", isMobile: true),
+              _buildMenuItem(0, Icons.home, 'Home', isMobile: true),
+              _buildMenuItem(1, Icons.grid_view, 'My Content', isMobile: true),
+              _buildMenuItem(2, Icons.card_giftcard, 'Bonuses', isMobile: true),
+              _buildMenuItem(3, Icons.person_outline, 'My Account', isMobile: true),
               const Spacer(),
-              _buildMenuItem(4, Icons.logout, "Sair", isLogout: true, isMobile: true),
+              _buildMenuItem(4, Icons.logout, 'Log Out', isLogout: true, isMobile: true),
             ],
           ),
         ),
@@ -80,10 +80,10 @@ class _AppLayoutState extends State<AppLayout> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                   Padding(
-                    padding: EdgeInsets.only(bottom: 40),
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 40),
                     child: RichText(
-                      text: TextSpan(
+                      text: const TextSpan(
                         children: [
                           TextSpan(
                             text: "The Brazilian\n",
@@ -96,21 +96,20 @@ class _AppLayoutState extends State<AppLayout> {
                           TextSpan(
                             text: "Beauty Code",
                             style: TextStyle(
-                              color: Colors.pinkAccent, // 👈 outra cor
+                              color: Colors.pinkAccent,
                               fontWeight: FontWeight.bold,
-                              fontSize: 18,
                             ),
                           ),
                         ],
                       ),
                     ),
                   ),
-                  _buildMenuItem(0, Icons.home, "Início"),
-                  _buildMenuItem(1, Icons.grid_view, "Meu Conteúdo"),
-                  _buildMenuItem(2, Icons.card_giftcard, "Bônus"),
-                  _buildMenuItem(3, Icons.person_outline, "Minha Conta"),
+                  _buildMenuItem(0, Icons.home, 'Home'),
+                  _buildMenuItem(1, Icons.grid_view, 'My Content'),
+                  _buildMenuItem(2, Icons.card_giftcard, 'Bonuses'),
+                  _buildMenuItem(3, Icons.person_outline, 'My Account'),
                   const Spacer(),
-                  _buildMenuItem(4, Icons.logout, "Sair", isLogout: true),
+                  _buildMenuItem(4, Icons.logout, 'Log Out', isLogout: true),
                 ],
               ),
             ),
@@ -126,7 +125,7 @@ class _AppLayoutState extends State<AppLayout> {
                 borderRadius: BorderRadius.circular(isMobileOrTablet ? 8 : 16),
                 child: _currentIndex < _pages.length
                     ? _pages[_currentIndex]
-                    : const Center(child: Text("Saindo...", style: TextStyle(color: Colors.white))),
+                    : const Center(child: Text('Exiting...', style: TextStyle(color: Colors.white))),
               ),
             ),
           ),
