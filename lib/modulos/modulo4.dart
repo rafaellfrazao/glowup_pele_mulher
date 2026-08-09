@@ -34,7 +34,7 @@ class Modulo4Page extends StatelessWidget {
 
   final String moduleId = 'modulo_4';
 
-  // List of the 5 lessons in the Maintenance & Women's Lifestyle module.
+  // List of the 9 lessons in the Maintenance & Women's Lifestyle module.
   static final List<_Aula> _aulas = [
     // Lesson 1 - Hydration From The Inside Out
     const _Aula(
@@ -64,7 +64,7 @@ class Modulo4Page extends StatelessWidget {
         "Caffeine and alcohol both increase fluid loss, so add an extra glass of water alongside them.",
         "Dry lips and dull-looking skin are often early signs of low hydration, not just a skincare issue.",
       ],
-      tutorialCasaTitulo: "Make your own Brazilian-style infused water",
+      tutorialCasaTitulo: "Brazilian Recipe: Lime & Mint Infused Water",
       tutorialCasaMateriais: [
         "1 liter of cold water",
         "1/2 lime or lemon, sliced",
@@ -106,7 +106,7 @@ class Modulo4Page extends StatelessWidget {
         "A cool, dark room generally supports deeper sleep than a warm, bright one.",
         "Consistent poor sleep shows up on skin as dullness and puffiness faster than most people expect.",
       ],
-      tutorialCasaTitulo: "Make a calming lavender & chamomile pillow mist",
+      tutorialCasaTitulo: "Brazilian Recipe: Lavender & Chamomile Pillow Mist",
       tutorialCasaMateriais: [
         "100ml of distilled or boiled-and-cooled water",
         "1 tablespoon of witch hazel or vodka (helps the oils mix with the water)",
@@ -146,17 +146,17 @@ class Modulo4Page extends StatelessWidget {
         "A wide-brim hat and sunglasses add real extra protection on top of sunscreen, not instead of it.",
         "Be skeptical of homemade 'natural sunscreen' recipes online — they don't reliably block UV rays.",
       ],
-      tutorialCasaTitulo: "Build your grab-and-go sun protection kit",
+      tutorialCasaTitulo: "Brazilian Recipe: Coconut Water After-Sun Cooling Mist",
       tutorialCasaMateriais: [
-        "A small pouch or bag dedicated to sun protection",
-        "A travel-size or stick sunscreen",
-        "A pair of UV-protective sunglasses",
-        "A compact folding hat or cap, if you have one",
+        "100ml of coconut water (água de coco), a Brazilian staple for cooling down after sun exposure",
+        "2 tablespoons of pure aloe vera gel",
+        "A small spray bottle",
       ],
       tutorialCasaPassos: [
-        "Put all the items together in one small pouch you can grab on your way out the door.",
-        "Keep the pouch in your bag, car, or by the front door so reapplying is never a hassle.",
-        "Refill the travel sunscreen whenever it runs low, so the kit is always ready to use.",
+        "Combine the coconut water and aloe vera gel in the spray bottle and shake well.",
+        "Chill in the refrigerator for at least 30 minutes before your first use.",
+        "Mist generously over sun-exposed skin throughout the day for an instant, refreshing cooldown.",
+        "Keep refrigerated and use within 3 days for the best cooling effect.",
       ],
     ),
 
@@ -187,7 +187,7 @@ class Modulo4Page extends StatelessWidget {
         "Rough seams and tags rubbing against freshly exfoliated skin are a common, overlooked irritant.",
         "Natural fibers tend to hold onto self-tanner and body oils less than synthetic ones do.",
       ],
-      tutorialCasaTitulo: "Make a gentle, skin-friendly fabric rinse",
+      tutorialCasaTitulo: "Brazilian Recipe: Gentle Skin-Friendly Fabric Rinse",
       tutorialCasaMateriais: [
         "1/2 cup of white vinegar",
         "5-6 drops of a gentle essential oil, like lavender (optional, for scent)",
@@ -207,9 +207,9 @@ class Modulo4Page extends StatelessWidget {
       introducao:
       "You now have skin, body, glow, sleep, sun and fabric habits — the real "
           "challenge isn't learning them, it's keeping them going once the initial "
-          "motivation fades. In this final lesson, you'll pull everything from the "
-          "program into one simple, realistic routine, using habit-stacking so new "
-          "habits attach themselves to things you already do every day.",
+          "motivation fades. In this lesson, you'll pull everything from the program "
+          "into one simple, realistic routine, using habit-stacking so new habits "
+          "attach themselves to things you already do every day.",
       imagem2:
       "https://images.unsplash.com/photo-1698746043955-42b03ddedfcb?w=1000",
       dicaTitulo: "How to make it stick long-term",
@@ -225,16 +225,173 @@ class Modulo4Page extends StatelessWidget {
         "Visual progress (photos every few weeks) tends to keep motivation higher than the mirror alone.",
         "The goal isn't a perfect routine, it's a routine you'll still be doing in six months.",
       ],
-      tutorialCasaTitulo: "Make a simple paper habit tracker",
+      tutorialCasaTitulo: "Brazilian Recipe: Rosewater & Glycerin Refreshing Mist",
       tutorialCasaMateriais: [
-        "1 sheet of paper or a small notebook",
-        "A pen or marker",
+        "100ml of pure rosewater",
+        "1 teaspoon of vegetable glycerin",
+        "A small spray bottle",
       ],
       tutorialCasaPassos: [
-        "List your 2-3 chosen habits down the left side of the page.",
-        "Draw 7 boxes next to each habit, one for every day of the week.",
-        "Mark a box each time you complete that habit, and leave it blank if you miss a day.",
-        "At the end of the week, glance back to see your pattern before starting a new sheet.",
+        "Combine the rosewater and glycerin in the spray bottle and shake gently.",
+        "Store in the refrigerator for a cooling effect on hot days.",
+        "Use it as the closing step of your routine — morning, night, or anytime you need a quick refresh.",
+        "Shake lightly before each use, since glycerin can settle over time.",
+      ],
+    ),
+
+    // Lesson 6 - Skin-Nourishing Foods
+    const _Aula(
+      titulo: "06. Skin-Nourishing Foods: eating for glow",
+      imagem1:
+      "https://images.unsplash.com/photo-1490474418585-ba9bad8fd0ea?w=1000",
+      introducao:
+      "What you eat shows up on your skin just as much as what you apply to "
+          "it. Açaí, one of Brazil's most iconic superfoods, is loaded with "
+          "antioxidants that help fight the everyday oxidative stress that dulls "
+          "skin over time. It's such a staple in Brazil that açaí bowls are a "
+          "normal breakfast, not a trend — and it happens to be one of the easiest "
+          "beauty-from-within habits you can add to your week.",
+      dicaTitulo: "Building a skin-friendly plate",
+      passos: [
+        "Add one antioxidant-rich fruit to your day, like berries, açaí, or papaya.",
+        "Include a source of healthy fats daily, such as avocado, olive oil, or nuts, to support skin elasticity.",
+        "Prioritize vitamin C-rich foods like citrus and bell peppers, which support collagen production.",
+        "Limit ultra-processed, high-sugar snacks, which are linked to faster visible skin aging.",
+        "Treat this as an 80/20 habit, not a strict diet — consistency matters more than perfection.",
+      ],
+      dicasExtras: [
+        "Omega-3 rich foods like flaxseed and walnuts help support the skin's natural barrier.",
+        "Green tea is another antioxidant-rich swap for your daily coffee or soda.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Açaí & Berry Glow Bowl",
+      tutorialCasaMateriais: [
+        "1 packet (100g) of frozen unsweetened açaí pulp",
+        "1/2 banana",
+        "A handful of mixed berries",
+        "2 tablespoons of granola and a drizzle of honey, to top",
+      ],
+      tutorialCasaPassos: [
+        "Blend the frozen açaí pulp with the banana and a splash of water until thick and smooth.",
+        "Pour into a bowl.",
+        "Top with the mixed berries, granola, and a drizzle of honey.",
+        "Enjoy immediately, while the açaí base is still cold and thick.",
+      ],
+    ),
+
+    // Lesson 7 - Stress & Skin Connection
+    const _Aula(
+      titulo: "07. Stress & Skin: the mind-body connection",
+      imagem1:
+      "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=1000",
+      introducao:
+      "Chronic stress raises cortisol, and elevated cortisol is directly "
+          "linked to breakouts, slower skin healing, and a duller overall "
+          "complexion. In Brazil, a warm homemade tea (chá caseiro) is the "
+          "go-to remedy for winding down, using herbs passed down through "
+          "generations rather than reaching for something artificial. Building a "
+          "small daily stress-reset habit does as much for your skin as most "
+          "topical products.",
+      dicaTitulo: "Quick daily stress-reset habits",
+      passos: [
+        "Take 5 slow, deep breaths before checking your phone in the morning.",
+        "Step outside for a few minutes of natural light and fresh air once a day.",
+        "Set a specific time in the evening to make and slowly drink a calming tea.",
+        "Notice which moments of your day spike your stress, and build in a 2-minute pause around them.",
+      ],
+      dicasExtras: [
+        "Journaling for even 5 minutes a day is linked to measurably lower stress levels.",
+        "Chronic stress and poor sleep tend to amplify each other — Lesson 2's wind-down routine helps here too.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Fennel & Lemongrass Calming Tea",
+      tutorialCasaMateriais: [
+        "1 teaspoon of fennel seeds (erva-doce)",
+        "A handful of fresh lemongrass leaves (capim-santo), a classic Brazilian home-remedy tea",
+        "1 teaspoon of honey (optional)",
+        "250ml of boiling water",
+      ],
+      tutorialCasaPassos: [
+        "Pour the boiling water over the fennel seeds and lemongrass in a mug or teapot.",
+        "Cover and let it steep for 5 to 8 minutes.",
+        "Strain into a cup and stir in honey, if using.",
+        "Drink warm, ideally as part of your evening wind-down routine.",
+      ],
+    ),
+
+    // Lesson 8 - Movement & Circulation
+    const _Aula(
+      titulo: "08. Movement & Circulation: exercise for glowing skin",
+      imagem1:
+      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1000",
+      introducao:
+      "Beyond fitness goals, movement boosts blood flow, which delivers more "
+          "oxygen and nutrients to skin cells and helps carry away toxins. "
+          "Brazil's beach culture makes this almost effortless: a walk on the "
+          "sand, a beach volleyball game, or a simple functional training "
+          "session outdoors are all normal parts of the week. You don't need an "
+          "intense gym routine — consistent, light movement is what actually "
+          "supports skin over time.",
+      dicaTitulo: "Simple ways to move for better circulation",
+      passos: [
+        "Aim for at least 20-30 minutes of movement most days, even if it's just a brisk walk.",
+        "Take short standing or stretching breaks every hour if you sit for long stretches.",
+        "Try alternating hot and cold water at the end of your shower to stimulate circulation.",
+        "Prioritize consistency over intensity — daily light movement beats occasional intense workouts.",
+      ],
+      dicasExtras: [
+        "Sweating during exercise is a normal, healthy process — just remember to cleanse your skin afterward.",
+        "Outdoor movement adds the bonus of natural light exposure, which also supports better sleep.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Mint & Cucumber Cooling Post-Workout Spray",
+      tutorialCasaMateriais: [
+        "1/2 cucumber, chopped",
+        "A handful of fresh mint leaves",
+        "200ml of cold water",
+        "A small spray bottle",
+      ],
+      tutorialCasaPassos: [
+        "Blend the cucumber, mint, and water together until smooth.",
+        "Strain through a fine sieve or cloth to remove the pulp.",
+        "Pour the liquid into the spray bottle and chill in the fridge.",
+        "Mist over your face and body right after a workout for an instant, cooling refresh.",
+      ],
+    ),
+
+    // Lesson 9 - Your Complete Self-Care Toolkit
+    const _Aula(
+      titulo: "09. Your Complete Self-Care Toolkit: putting it all together",
+      imagem1:
+      "https://images.unsplash.com/photo-1596178060810-72178c5f1c04?w=1000",
+      introducao:
+      "You've now covered every layer of the Brazilian body care approach: "
+          "skin fundamentals, bathing rituals, glow and toning, and the daily "
+          "lifestyle habits that support it all. This final lesson brings "
+          "everything together into one simple map you can return to anytime, "
+          "plus a signature recipe to close out your routine — the kind of "
+          "all-purpose cream many Brazilian women keep on their nightstand for "
+          "daily use.",
+      dicaTitulo: "Your simplified daily and weekly self-care map",
+      passos: [
+        "Daily: cleansing and hydration (Module 1), sunscreen (Module 4), and water intake (Module 4).",
+        "A few times a week: body exfoliation (Module 2) and dry brushing or massage (Module 3).",
+        "Weekly: the full home spa bath ritual (Module 2) and the complete toning ritual (Module 3).",
+        "Ongoing: sleep, stress, and movement habits running quietly in the background (Module 4).",
+      ],
+      dicasExtras: [
+        "You don't need to do every single recipe every week — pick the ones that fit your life and stay consistent.",
+        "Revisit this module anytime your routine starts slipping, it's designed to be your reset point.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Babassu & Coconut Silk Body Cream",
+      tutorialCasaMateriais: [
+        "4 tablespoons of babassu oil (a lightweight Amazonian oil, prized in Brazil for silky, fast-absorbing hydration)",
+        "2 tablespoons of coconut oil",
+        "1 teaspoon of cornstarch, for a silkier finish",
+        "5 drops of orange or vanilla essential oil (optional)",
+      ],
+      tutorialCasaPassos: [
+        "Gently melt the babassu and coconut oils together in a double boiler or microwave in short bursts.",
+        "Let cool slightly, then whisk in the cornstarch until fully combined.",
+        "Whip with a hand mixer for 3 to 5 minutes until light and fluffy.",
+        "Stir in the essential oil once cooled, and store in a sealed jar as your everyday signature cream.",
       ],
     ),
   ];

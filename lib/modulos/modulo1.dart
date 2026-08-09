@@ -40,7 +40,7 @@ class Modulo1Page extends StatelessWidget {
           imagem1:
               'https://images.unsplash.com/photo-1544717304-a2db4a7b16ee?w=1000',
           introducao:
-              'Welcome to Module 1! Before any product or recipe, the Brazilian glow starts with one key step: understanding your skin type. In this lesson, you will learn how to identify whether your skin is oily, dry, combination, or sensitive, and why this completely transforms how you clean, hydrate, and care for it daily.',
+              'Welcome to Module 1! Before any recipe or ritual, the Brazilian glow starts with one key step: understanding your skin type. In this lesson, you will learn how to identify whether your skin is oily, dry, combination, or sensitive, and why this completely transforms how you clean, hydrate, and care for it daily.',
           tutorialCasaTitulo: "Home Test: Discover Your Skin Type in 5 Minutes",
           tutorialCasaMateriais: [
             '1 clean paper tissue or towel',
@@ -62,7 +62,7 @@ class Modulo1Page extends StatelessWidget {
           imagem1:
               'https://images.unsplash.com/photo-1731514771613-991a02407132?w=1000',
           introducao:
-              'Cleansing is the most underrated step in skincare. Dirty or poorly cleansed skin prevents any moisturizer or serum from working properly. Here you will learn the double cleansing method used in top Brazilian routines.',
+              'Cleansing is the most underrated step in skincare. Dirty or poorly cleansed skin prevents any moisturizer or serum from working properly. Here you will learn the double cleansing recipe used in top Brazilian routines.',
           imagem2:
               'https://images.unsplash.com/photo-1629380108599-ea06489d66f5?w=1000',
           dicaTitulo: "How to Perform Perfect Facial Cleansing",
@@ -78,7 +78,7 @@ class Modulo1Page extends StatelessWidget {
             'Change your face towel frequently to prevent bacteria.',
             'Oily skin also needs hydration after cleansing.',
           ],
-          tutorialCasaTitulo: "DIY: Double Cleansing with Simple Items",
+          tutorialCasaTitulo: "Brazilian Recipe: Double Cleansing with Simple Items",
           tutorialCasaMateriais: [
             'Neutral oil (coconut, sunflower, or olive) for first cleanse',
             'Neutral facial cleanser or specific for your skin type',
@@ -116,7 +116,7 @@ class Modulo1Page extends StatelessWidget {
             'Less product, more layers.',
             'Drink enough water daily.',
           ],
-          tutorialCasaTitulo: "DIY: Hydrating Homemade Mask",
+          tutorialCasaTitulo: "Brazilian Recipe: Hydrating Homemade Mask",
           tutorialCasaMateriais: [
             '1 tablespoon of oatmeal',
             '1 tablespoon of honey',
@@ -154,7 +154,7 @@ class Modulo1Page extends StatelessWidget {
             'Prefer gentle exfoliants.',
             'Take weekly photos to see your progress.',
           ],
-          tutorialCasaTitulo: "DIY: Gentle Facial Exfoliant",
+          tutorialCasaTitulo: "Brazilian Recipe: Gentle Facial Exfoliant",
           tutorialCasaMateriais: [
             '1 tablespoon of fine sugar',
             '1 tablespoon of coconut oil',
@@ -431,7 +431,7 @@ class Modulo1Page extends StatelessWidget {
     );
   }
 
-  // Card de "Tutorial: faça em casa" com materiais e passos
+  // Card de "Receita: faça em casa" com ingredientes e passos
   Widget _buildTutorialCasa(
     String titulo,
     List<String> materiais,
@@ -450,7 +450,7 @@ class Modulo1Page extends StatelessWidget {
           Row(
             children: [
               const Icon(
-                Icons.home_work_outlined,
+                Icons.spa_outlined,
                 color: Colors.green,
                 size: 20,
               ),
@@ -469,7 +469,7 @@ class Modulo1Page extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           const Text(
-            "What you will need",
+            "Ingredients",
             style: TextStyle(
               color: Colors.grey,
               fontSize: 13,
@@ -503,7 +503,7 @@ class Modulo1Page extends StatelessWidget {
           }).toList(),
           const SizedBox(height: 16),
           const Text(
-            "Preparation steps",
+            "Recipe Steps",
             style: TextStyle(
               color: Colors.grey,
               fontSize: 13,

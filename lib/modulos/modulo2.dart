@@ -77,9 +77,9 @@ class Modulo2Page extends StatelessWidget {
         "Never use body exfoliant (coarse grains) on the face, the skin there is much thinner.",
         "Apply moisturizer within 3 minutes after rinsing, that's when the skin absorbs best.",
       ],
-      tutorialCasaTitulo: "DIY: coffee and coconut body scrub",
+      tutorialCasaTitulo: "Brazilian Recipe: Coffee & Coconut Body Scrub",
       tutorialCasaMateriais: [
-        "2 tablespoons of coffee grounds (or ground coffee)",
+        "2 tablespoons of coffee grounds (Brazil is the world's top coffee producer, and coffee grounds are a classic in Brazilian body scrubs)",
         "2 tablespoons of coconut oil or olive oil",
         "1 tablespoon of brown or refined sugar",
       ],
@@ -113,9 +113,9 @@ class Modulo2Page extends StatelessWidget {
         "Lotions with urea or shea butter hold more water in very dry skin.",
         "If your skin is oily, prefer lighter oils (like grape seed) in smaller amounts.",
       ],
-      tutorialCasaTitulo: "DIY: post-bath body oil with natural aroma",
+      tutorialCasaTitulo: "Brazilian Recipe: Post-Bath Buriti Oil Blend",
       tutorialCasaMateriais: [
-        "3 tablespoons of sweet almond oil",
+        "3 tablespoons of buriti oil (a traditional Brazilian Amazonian oil, rich in vitamin A and natural antioxidants)",
         "1 tablespoon of grape seed oil or sunflower oil",
         "3 drops of lavender or chamomile essential oil (optional)",
       ],
@@ -146,7 +146,7 @@ class Modulo2Page extends StatelessWidget {
         "Very tight clothes immediately after the bath favor ingrown hairs.",
         "Mild acids (like lactic acid) in body lotions help significantly with keratosis pilaris.",
       ],
-      tutorialCasaTitulo: "DIY: chamomile soothing compress",
+      tutorialCasaTitulo: "Brazilian Recipe: Chamomile Soothing Compress",
       tutorialCasaMateriais: [
         "1 sachet or 2 tablespoons of chamomile flowers",
         "200ml of boiling water",
@@ -181,7 +181,7 @@ class Modulo2Page extends StatelessWidget {
         "Keep bar soap out of direct contact with water between uses, to make it last longer.",
         "If the skin itches or feels tight right after the bath, it's a sign to change products.",
       ],
-      tutorialCasaTitulo: "DIY: simple pH test of your soap",
+      tutorialCasaTitulo: "Brazilian Recipe: Simple pH Test of Your Soap",
       tutorialCasaMateriais: [
         "Your current soap or shower gel",
         "1 pH indicator paper strip (found in pharmacies)",
@@ -215,9 +215,9 @@ class Modulo2Page extends StatelessWidget {
         "Mild acids at night (like low-concentration glycolic acid) help uniformize these areas.",
         "Avoid shaving and exfoliating the same area on the same day, this adds irritation.",
       ],
-      tutorialCasaTitulo: "DIY: gentle exfoliant for sensitive areas",
+      tutorialCasaTitulo: "Brazilian Recipe: Papaya Brightening Scrub",
       tutorialCasaMateriais: [
-        "1 tablespoon of finely ground oatmeal",
+        "2 tablespoons of mashed ripe papaya (a Brazilian home-remedy classic, its natural enzymes gently brighten skin)",
         "1 tablespoon of unsweetened natural yogurt",
         "1 teaspoon of honey",
       ],
@@ -251,9 +251,9 @@ class Modulo2Page extends StatelessWidget {
         "Avoid products with alcohol or strong fragrance on newly sun-exposed skin.",
         "Reinforce moisturizer at night in the following days, the skin continues recovering for several days.",
       ],
-      tutorialCasaTitulo: "DIY: aloe vera soothing gel",
+      tutorialCasaTitulo: "Brazilian Recipe: Babosa (Aloe Vera) Soothing Gel",
       tutorialCasaMateriais: [
-        "1 fresh aloe vera leaf, or 3 tablespoons of pure aloe vera gel",
+        "1 fresh aloe vera leaf (called babosa in Brazil, a staple in every beach house after a day in the sun), or 3 tablespoons of pure aloe vera gel",
         "1 teaspoon of coconut oil (optional, for very dry skin)",
       ],
       tutorialCasaPassos: [
@@ -287,14 +287,15 @@ class Modulo2Page extends StatelessWidget {
         "Avoid the cell phone or any screen during this moment, it's part of the relaxing effect.",
         "Do this ritual always on the same day of the week until it becomes an automatic habit.",
       ],
-      tutorialCasaTitulo: "DIY: relaxing foot bath post-bath",
+      tutorialCasaTitulo: "Brazilian Recipe: Coarse Sea Salt & Bay Leaf Foot Bath",
       tutorialCasaMateriais: [
         "1 basin with lukewarm water",
-        "2 tablespoons of coarse salt",
+        "2 tablespoons of coarse Brazilian sea salt",
+        "2 to 3 bay leaves (louro), a classic ingredient in traditional Brazilian herbal baths (banho de ervas)",
         "1 teaspoon of vegetable oil or 3 drops of essential oil",
       ],
       tutorialCasaPassos: [
-        "After the bath, fill the basin with lukewarm water and add the coarse salt and oil.",
+        "After the bath, fill the basin with lukewarm water and add the coarse salt, bay leaves, and oil.",
         "Soak your feet and relax for 15 minutes, taking the opportunity to breathe deeply.",
         "Dry your feet well, especially between the toes, and finish with a denser cream.",
       ],
@@ -560,7 +561,7 @@ class Modulo2Page extends StatelessWidget {
     );
   }
 
-  // Card de "Tutorial: faça em casa" com materiais e passos
+  // Card de "Receita: faça em casa" com ingredientes e passos
   Widget _buildTutorialCasa(
     String titulo,
     List<String> materiais,
@@ -579,7 +580,7 @@ class Modulo2Page extends StatelessWidget {
           Row(
             children: [
               const Icon(
-                Icons.home_work_outlined,
+                Icons.spa_outlined,
                 color: Colors.green,
                 size: 20,
               ),
@@ -598,7 +599,7 @@ class Modulo2Page extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           const Text(
-            "What you will need",
+            "Ingredients",
             style: TextStyle(
               color: Colors.grey,
               fontSize: 13,
@@ -632,7 +633,7 @@ class Modulo2Page extends StatelessWidget {
           }).toList(),
           const SizedBox(height: 16),
           const Text(
-            "Preparation steps",
+            "Recipe Steps",
             style: TextStyle(
               color: Colors.grey,
               fontSize: 13,

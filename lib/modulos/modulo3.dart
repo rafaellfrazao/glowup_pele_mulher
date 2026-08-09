@@ -34,7 +34,7 @@ class Modulo3Page extends StatelessWidget {
 
   final String moduleId = 'modulo_3';
 
-  // List of the 5 lessons in the Bronze, Glow & Body Contour module.
+  // List of the 9 lessons in the Bronze, Glow & Body Contour module.
   static final List<_Aula> _aulas = [
     // Lesson 1 - The Healthy Tan
     const _Aula(
@@ -208,6 +208,160 @@ class Modulo3Page extends StatelessWidget {
         "Mix the aloe vera gel with the cold green tea until fully combined.",
         "Pour the mixture into an ice cube tray and freeze.",
         "After your post-sun shower, wrap a cube in a thin cloth and gently glide it over any flushed areas.",
+      ],
+    ),
+
+    // Lesson 6 - Anti-Cellulite Ritual
+    const _Aula(
+      titulo: "06. Anti-Cellulite Ritual: dry brushing & guaraná scrub",
+      imagem1:
+      "https://images.unsplash.com/photo-1533228705496-072ca298b122?w=1000",
+      introducao:
+      "Before any cream goes on the skin, Brazilian beauty rituals start with "
+          "movement: dry brushing stimulates circulation and lymphatic flow, prepping the "
+          "skin to actually absorb what comes next. Paired with guaraná — a caffeine-rich "
+          "Amazonian seed found in almost every Brazilian firming product — this combination "
+          "is one of the most requested rituals before beach season. It won't erase cellulite "
+          "overnight, but consistent use noticeably smooths and firms the skin's texture "
+          "over time.",
+      dicaTitulo: "Dry brushing technique before the shower",
+      passos: [
+        "Use a natural-bristle dry brush on completely dry skin, before wetting the body.",
+        "Always brush in long strokes toward the heart, starting at the ankles and moving up.",
+        "Spend extra time circling the thighs, hips, and back of the arms, the most common cellulite areas.",
+        "Keep pressure firm but comfortable, never so hard that it irritates or reddens the skin.",
+        "Shower right after to rinse off the loosened dead skin cells.",
+      ],
+      dicasExtras: [
+        "Dry brush 3 to 4 times a week for best results, always before, never after, the shower.",
+        "Replace your brush every few months, worn bristles lose their stimulating effect.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Guaraná & Coffee Firming Scrub",
+      tutorialCasaMateriais: [
+        "2 tablespoons of ground coffee",
+        "1 teaspoon of guaraná powder (a caffeine-rich Amazonian seed, a staple in Brazilian firming products)",
+        "2 tablespoons of coconut oil",
+      ],
+      tutorialCasaPassos: [
+        "Mix the coffee grounds, guaraná powder, and coconut oil into a thick paste.",
+        "After dry brushing, apply to damp thighs and hips in the shower.",
+        "Massage in circular motions for 3 minutes, focusing on problem areas.",
+        "Rinse thoroughly with lukewarm water and follow with a firming lotion.",
+      ],
+    ),
+
+    // Lesson 7 - Clay Body Wrap
+    const _Aula(
+      titulo: "07. Clay Body Wrap: firming and detoxifying with Brazilian clay",
+      imagem1:
+      "https://images.unsplash.com/photo-1498843053639-170ff2122f35?w=1000",
+      introducao:
+      "Clay body wraps are a spa staple across Brazil, prized for their ability "
+          "to tighten skin, draw out excess fluid, and leave the body feeling noticeably "
+          "firmer after just one session. Green and white clays, both mined in Brazil, are "
+          "rich in minerals that help temporarily tone the skin's surface while you relax. "
+          "This is the kind of ritual many Brazilian women do the week before a big beach "
+          "trip or event.",
+      imagem2:
+      "https://images.unsplash.com/photo-1650543679723-de88854178c4?w=1000",
+      dicaTitulo: "How to apply a body wrap correctly",
+      passos: [
+        "Start with clean, dry skin — take a shower before applying the clay.",
+        "Mix the clay according to package instructions, or follow the homemade recipe below.",
+        "Apply a thick, even layer to the target area (stomach, thighs, or arms).",
+        "Wrap loosely with plastic wrap or a cotton cloth to retain heat while the clay works.",
+        "Leave on for 20 to 30 minutes, resting, before rinsing off completely.",
+      ],
+      dicasExtras: [
+        "Never leave clay on until it's fully dry and cracking, this over-dries the skin.",
+        "Follow up with a rich body moisturizer immediately after rinsing to replace lost hydration.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Green Clay Firming Wrap",
+      tutorialCasaMateriais: [
+        "4 tablespoons of green or white cosmetic clay (argila, widely used in Brazilian spas)",
+        "Warm water, enough to form a paste",
+        "1 tablespoon of honey",
+      ],
+      tutorialCasaPassos: [
+        "Mix the clay with warm water gradually until you get a smooth, spreadable paste.",
+        "Stir in the honey for extra softness.",
+        "Apply to the target area and wrap loosely with plastic wrap or a cloth.",
+        "Rest for 20 to 30 minutes, then rinse off with warm water.",
+      ],
+    ),
+
+    // Lesson 8 - Lymphatic Drainage Self-Massage
+    const _Aula(
+      titulo: "08. Lymphatic Drainage Self-Massage: reducing puffiness",
+      imagem1:
+      "https://images.unsplash.com/photo-1587023705112-34a9b4fe8317?w=1000",
+      introducao:
+      "Lymphatic drainage massage is practically a national ritual in Brazil, "
+          "especially in the days before beach season or a big event, because it helps "
+          "reduce fluid retention and leaves the body looking less puffy and more sculpted. "
+          "You don't need a professional every time: a simple self-massage routine with the "
+          "right oil, done consistently, brings visible results in how light and toned the "
+          "legs feel.",
+      dicaTitulo: "Self-massage routine for legs and abdomen",
+      passos: [
+        "Always massage in the direction of the lymphatic flow: from the feet up toward the thighs, and from the abdomen toward the sides.",
+        "Use light, sweeping pressure, never deep or painful, this is not the same as a firm sports massage.",
+        "Spend about 5 minutes on each leg, and 3 minutes on the abdomen.",
+        "Finish by resting for a few minutes with your legs elevated against a wall, if possible.",
+      ],
+      dicasExtras: [
+        "Do this massage 3 to 4 times a week, ideally at night before bed.",
+        "Drink plenty of water on massage days to help the body flush out fluids.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Citrus & Rosemary Draining Oil",
+      tutorialCasaMateriais: [
+        "3 tablespoons of sweet almond oil or grape seed oil",
+        "5 drops of rosemary essential oil",
+        "Zest of 1 orange or tangerine (a nod to Brazil's abundant citrus groves)",
+      ],
+      tutorialCasaPassos: [
+        "Combine the almond oil, rosemary oil, and citrus zest in a small jar.",
+        "Let it sit for at least 2 hours so the oil absorbs the citrus aroma, then strain out the zest if desired.",
+        "Warm a small amount between your palms before massaging into legs and abdomen.",
+      ],
+    ),
+
+    // Lesson 9 - The Complete Toning Ritual
+    const _Aula(
+      titulo: "09. The Complete Toning Ritual: your weekly beach-ready routine",
+      imagem1:
+      "https://images.unsplash.com/photo-1676192651289-92ddbb55c26b?w=1000",
+      introducao:
+      "This final lesson brings everything from the module together into one "
+          "complete weekly ritual: brushing, scrubbing, wrapping, and massaging, finished "
+          "with a rich toning cream. It's the same sequence many Brazilian women follow "
+          "religiously the week leading up to a beach trip, and it works best as a "
+          "repeatable Sunday habit rather than a one-time treatment.",
+      imagem2:
+      "https://images.unsplash.com/photo-1544717304-a2db4a7b16ee?w=1000",
+      dicaTitulo: "The full weekly sequence, step by step",
+      passos: [
+        "Start with 3 minutes of dry brushing over legs, hips, and arms.",
+        "Apply the guaraná and coffee scrub in the shower, rinsing thoroughly.",
+        "Once out of the shower, apply the clay wrap to your problem area and rest for 20 minutes.",
+        "Rinse off the clay, then finish with the citrus and rosemary massage oil using the lymphatic drainage technique.",
+        "Close the ritual with a generous layer of toning body cream, recipe below.",
+      ],
+      dicasExtras: [
+        "Reserve about 1 hour once a week for this full ritual, ideally on a quiet Sunday.",
+        "Results build over weeks of consistency, not overnight.",
+      ],
+      tutorialCasaTitulo: "Brazilian Recipe: Cupuaçu Toning Body Butter",
+      tutorialCasaMateriais: [
+        "3 tablespoons of cupuaçu butter (a rich Amazonian butter known for improving skin elasticity)",
+        "1 tablespoon of coconut oil",
+        "5 drops of orange essential oil",
+      ],
+      tutorialCasaPassos: [
+        "Gently melt the cupuaçu butter and coconut oil together in a double boiler or microwave in short bursts.",
+        "Let cool slightly, then whip with a hand mixer until light and fluffy.",
+        "Stir in the orange essential oil once cooled.",
+        "Store in a sealed jar and apply generously after your weekly ritual, or as your daily body moisturizer.",
       ],
     ),
   ];
