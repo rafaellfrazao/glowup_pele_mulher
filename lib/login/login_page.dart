@@ -1,34 +1,74 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../tela_inicial/app_layout.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _LoginPageState extends State {
   final TextEditingController _nameController = TextEditingController();
+  bool _isLoading = true;
 
-  void _entrar(BuildContext context) {
+  @override
+  void initState() {
+    super.initState();
+    _verificarUsuarioLogado();
+  }
+
+  // 1. Verifica no localStorage se já existe um nome salvo ao abrir o app
+  Future _verificarUsuarioLogado() async {
+    final prefs = await SharedPreferences.getInstance();
+    final String? nomeSalvo = prefs.getString('user_name');
+
+    if (nomeSalvo != null && nomeSalvo.isNotEmpty && mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => AppLayout(userName: nomeSalvo),
+        ),
+      );
+    } else {
+      setState(() {
+        _isLoading = false;
+      });
+    }
+  }
+
+  // 2. Salva o nome no localStorage e navega para a tela principal
+  Future _entrar(BuildContext context) async {
     String nome = _nameController.text.trim();
     if (nome.isEmpty) {
-      // Nome padrão
       nome = 'Student';
     }
 
-    // Navega para o AppLayout principal passando o nome digitado
-    Navigator.pushReplacement(
-      context,
-      MaterialPageRoute(
-        builder: (context) => AppLayout(userName: nome),
-      ),
-    );
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('user_name', nome);
+
+    if (mounted) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (context) => AppLayout(userName: nome),
+        ),
+      );
+    }
   }
 
   @override
   Widget build(BuildContext context) {
+    if (_isLoading) {
+      return const Scaffold(
+        backgroundColor: Color(0xFF0F1112),
+        body: Center(
+          child: CircularProgressIndicator(color: Colors.green),
+        ),
+      );
+    }
+
     return Scaffold(
       backgroundColor: const Color(0xFF0F1112),
       body: Center(
